@@ -1,0 +1,23 @@
+caption: 
+created: 20170127113009362
+modified: 20170127113009362
+modifier: Riz
+status: 
+summary: 
+tags: blogCore
+title: gettingStarted2.0
+type: text/vnd.tiddlywiki
+
+<div class="tc-control-panel borderedinputs">
+
+|<$link to="$:/SiteTitle">Site Title</$link> |<$edit-text tiddler="$:/SiteTitle" default="" tag="input"/> |
+|<$link to="$:/SiteSubtitle">Site Subtitle</$link> |<$edit-text tiddler="$:/SiteSubtitle" default="" tag="input"/> |
+|*<$link to="$:/Home">Site Url</$link> |<$edit-text tiddler="$:/Home" default="" tag="input" placeholder="Enter your Site url here"/> |
+|<$link to="$:/headerLogo">logoTxt</$link> |<$edit-text tiddler="$:/headerLogo" default="" tag="input"/> |
+|<$link to="$:/userName">User Name</$link> |<$edit-text tiddler="$:/userName" default="" tag="input"/> |
+|<$link to="$:/userBio">User Bio</$link> |<$edit-text tiddler="$:/userBio" default="" tag="input"/> |
+|<$link to="$:/userImage">User Image</$link> |<$edit-text tiddler="$:/userImage" default="" tag="input"/> |
+
+
+
+

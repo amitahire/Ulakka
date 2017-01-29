@@ -1,0 +1,22 @@
+created: 20170124063433009
+modified: 20170124071158337
+tags: $:/tags/Stylesheet
+title: $:/Styles/gettingStarted
+type: text/vnd.tiddlywiki
+
+.borderedinputs > table > tbody > tr > td> input {border: 1px solid white;
+padding:3px;
+border-radius: 3px;
+}
+
+.borderedinputs input:focus {
+-webkit-transition: border 200ms ease-in;
+-moz-transition: border 200ms ease-in;
+-o-transition: border 200ms ease-in;
+border-color: #f8c1c3;
+}
+
+.tc-control-panel table input[type="checkbox"] {
+	width: auto;
+	margin-right: 10px;
+}

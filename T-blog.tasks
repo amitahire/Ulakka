@@ -1,0 +1,39 @@
+
+Documentation:
+  [ ] When you specify home url, remember to avoid the forward slash(/) at the end.
+  [ ] You can put anything in header, for eg: a contact or mail to.
+  [ ] blog-header
+  [ ] ST3 url encoding and move? 
+Ildy:
+  
+  [ ] Disqus
+  [ ] Upload to github
+  [ ] Block Quotes needs a CSS update
+Future:
+  [ ] Epub chain.
+        [ ] Build Static HTML files. Use pandoc to convert them to Epub. 
+  [ ] Grunt integration.
+        [ ] Get grunt to build the TW5, Minify the CSS, Concat the JS, Optimise our Images, CSS Lint, HTML validate, JS Hint, Live reload and push to github. 
+  [ ] There should be an advanced function to create index based on tags. - A category index. 
+  [ ] Do an admin panel
+TW5 issues:
+  [ ] File naming is not working
+  [ ] ST3 Build with
+  [ ] Grunt file
+
+
+
+
+＿＿＿＿＿＿＿＿＿＿＿
+Archive:
+ [x] Save on lose focus @done (17-01-29 08:33) @project(Ildy)
+ [x] ST3 double%2520url%2520encode and emmet lorem ipsum @done (17-01-29 08:33) @project(Ildy)
+ [x] Fill the headernavs with links @done (17-01-29 08:33) @project(Ildy)
+ [x] See advanced file creater plugin @done (17-01-29 07:14) @project(Ildy)
+ [x] Once the folder structure is decided, get the advanced file creater to set up base folder @done (17-01-29 07:14) @project(Ildy)
+ [x] Image in posts @done (17-01-29 06:51) @project(Ildy)
+ [x] Folder structure @done (17-01-29 06:48) @project(Ildy)
+ [x] Set the rendered tiddlers post type to Published. @done (17-01-28 18:58) @project(Ildy)
+ [x] In reality there will be a field too with "status" showing published. Edit button will be linked to this field. When you press it, it will turn out blank. If you are using ST3, you will have to set it manually. @done (17-01-28 18:58) @project(How do I view it now)
+ [x] Facebook sharing. @done (17-01-28 18:58) @project(Ildy)
+ 
