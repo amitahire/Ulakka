@@ -1,0 +1,9 @@
+created: 20170129093542252
+description: Footer Item
+group: Blog
+modified: 20170129093730680
+name: blog/footer-item
+tags: blogCore
+title: $:/language/Docs/Types/Blog/Footer-Item
+type: text/vnd.tiddlywiki
+

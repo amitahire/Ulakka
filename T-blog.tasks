@@ -2,13 +2,12 @@
 Documentation:
   [ ] When you specify home url, remember to avoid the forward slash(/) at the end.
   [ ] You can put anything in header, for eg: a contact or mail to.
-  [ ] blog-header
+  [ ] blog-header fields
   [ ] ST3 url encoding and move? 
 Ildy:
   
   [ ] Disqus
-  [ ] Upload to github
-  [ ] Block Quotes needs a CSS update
+  [ ] Archives page
 Future:
   [ ] Epub chain.
         [ ] Build Static HTML files. Use pandoc to convert them to Epub. 
@@ -26,6 +25,8 @@ TW5 issues:
 
 ＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ [x] Upload to github @done (17-01-29 10:07) @project(Ildy)
+ [x] Block Quotes needs a CSS update @done (17-01-29 10:07) @project(Ildy)
  [x] Save on lose focus @done (17-01-29 08:33) @project(Ildy)
  [x] ST3 double%2520url%2520encode and emmet lorem ipsum @done (17-01-29 08:33) @project(Ildy)
  [x] Fill the headernavs with links @done (17-01-29 08:33) @project(Ildy)

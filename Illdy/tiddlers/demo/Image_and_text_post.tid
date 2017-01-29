@@ -1,11 +1,10 @@
 created: 20170125142051738
-entry-type: Blog-post
-modified: 20170126034740975
+modified: 20170129103616037
 modifier: Riz
 summary: Fusce id egestas elit, sed rutrum arcu. Vestibulum molestie leo consectetur orci efficitur, a commodo mi venenatis. Aliquam eu quam commodo, aliquam elit et, tincidunt erat. Duis malesuada tempor rutrum. Donec porttitor quam vitae lectus dignissim, id blandit sem laoreet. Ut maximus enim vel varius tincidunt. Ut aliquet dolor quam, tincidunt pulvinar turpis viverra nec. In odio lectus, rutrum nec fringilla sit amet, vulputate id metus. Praesent non condimentum sem.
 tags: Demo
 title: Image and text post
-type: application/x-tiddler
+type: blog/blog-post
 
 <div style="text-align:center">
 <img src="http://hd.wallpaperswide.com/thumbs/castelmezzano_at_night_italy-t2.jpg">

@@ -1,9 +1,8 @@
 created: 20170127142602602
 doubleencodedurl: Miscellaneous entry with spaces in tile
-entry-type: Footer-Item
-modified: 20170127145358853
+modified: 20170129103627621
 tags: Demo [[Footer Category1]]
 title: FooterItem3
-type: text/vnd.tiddlywiki
+type: blog/footer-item
 
 Miscellaneous%2520entry%2520with%2520spaces%2520in%2520tile.html

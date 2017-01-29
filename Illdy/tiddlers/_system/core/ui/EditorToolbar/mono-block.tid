@@ -1,0 +1,19 @@
+button-classes: tc-text-editor-toolbar-item-start-group
+caption: {{$:/language/Buttons/MonoBlock/Caption}}
+condition: [is[tiddler]<targetTiddler>]
+created: 20170129090039295
+description: {{$:/language/Buttons/MonoBlock/Hint}}
+icon: $:/core/images/mono-block
+modified: 20170129090550918
+shortcuts: ((mono-block))
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/mono-block
+type: text/vnd.tiddlywiki
+
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="wrap-lines"
+	prefix="
+```"
+	suffix="```"
+/>

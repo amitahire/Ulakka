@@ -1,0 +1,17 @@
+caption: {{$:/language/Buttons/Underline/Caption}}
+condition: [is[tiddler]<targetTiddler>]
+created: 20170129090039290
+description: {{$:/language/Buttons/Underline/Hint}}
+icon: $:/core/images/underline
+modified: 20170129090550794
+shortcuts: ((underline))
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/underline
+type: text/vnd.tiddlywiki
+
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="wrap-selection"
+	prefix="__"
+	suffix="__"
+/>

@@ -11,18 +11,26 @@
     ],
     "build": {
         "index": [
-             "--output",
+            "--output",
             "./blog",
             "--rendertiddler",
             "indexTemplate",
             "index.html",
             "text/plain"
         ],
+        "archive": [
+            "--output",
+            "./blog",
+            "--rendertiddler",
+            "archiveTemplate",
+            "archive.html",
+            "text/plain"
+        ],
         "posts": [
             "--output",
             "./blog",
             "--rendertiddlers",
-            "[entry-type[Blog-post]!sort[modified]limit[10]]",
+            "[type[blog/blog-post]!sort[modified]limit[10]]",
             "postTemplate",
             "./",
             "text/plain",
@@ -33,7 +41,7 @@
          "--output",
             "./blog",
          "--rendertiddlers",
-            "[entry-type[Misc]!sort[modified]limit[10]]",
+            "[type[blog/misc]!sort[modified]limit[10]]",
             "postTemplate",
             "./",
             "text/plain",

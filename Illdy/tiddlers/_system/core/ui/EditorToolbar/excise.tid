@@ -1,0 +1,12 @@
+caption: {{$:/language/Buttons/Excise/Caption}}
+condition: [is[tiddler]<targetTiddler>]
+created: 20170129090039302
+description: {{$:/language/Buttons/Excise/Hint}}
+dropdown: $:/core/ui/EditorToolbar/excise-dropdown
+icon: $:/core/images/excise
+modified: 20170129090551014
+shortcuts: ((excise))
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/excise
+type: text/vnd.tiddlywiki
+

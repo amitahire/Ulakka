@@ -1,0 +1,18 @@
+button-classes: tc-text-editor-toolbar-item-start-group
+caption: {{$:/language/Buttons/Heading1/Caption}}
+condition: [is[tiddler]<targetTiddler>]
+created: 20170129090039297
+description: {{$:/language/Buttons/Heading1/Hint}}
+icon: $:/core/images/heading-1
+modified: 20170129090550877
+shortcuts: ((heading-1))
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/heading-1
+type: text/vnd.tiddlywiki
+
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="prefix-lines"
+	character="!"
+	count="1"
+/>
