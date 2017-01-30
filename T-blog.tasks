@@ -4,10 +4,20 @@ Documentation:
   [ ] You can put anything in header, for eg: a contact or mail to.
   [ ] blog-header fields
   [ ] ST3 url encoding and move? 
+  [ ] srcset field
+  [ ] imgsrc
+  [ ] You can make the footer into an about us snippet
+Astrid Documentation:
+  [ ] logo footer
 Ildy:
-  
   [ ] Disqus
-  [ ] Archives page
+  [ ] map $:/userName to the default username tiddler
+
+Astrid:
+  [ ] map $:/userName to the default username tiddler
+  [ ] postTemplate
+  [ ] Archive Template
+  [ ] New tiddler should have imgsrc field
 Future:
   [ ] Epub chain.
         [ ] Build Static HTML files. Use pandoc to convert them to Epub. 
@@ -15,6 +25,17 @@ Future:
         [ ] Get grunt to build the TW5, Minify the CSS, Concat the JS, Optimise our Images, CSS Lint, HTML validate, JS Hint, Live reload and push to github. 
   [ ] There should be an advanced function to create index based on tags. - A category index. 
   [ ] Do an admin panel
+  [ ] http://demo.designwall.com/dw-minion/
+  [ ] http://demo.athemes.com/astrid/blog/
+  [ ] http://demo.athemes.com/rocked/2015/03/10/just-a-simple-post/
+  [ ] http://demos.bavotasan.com/arcade/blog/
+  [ ] http://testbase.info/c/theme/wp/ascent/
+  [ ] http://attila.zutrinken.com/
+  [ ] http://oscar-theme.tumblr.com/
+  [ ] http://moth-demo.tumblr.com/   : Simple and unique
+  [ ] http://editorial-theme.tumblr.com/page/2
+
+
 TW5 issues:
   [ ] File naming is not working
   [ ] ST3 Build with
@@ -25,16 +46,8 @@ TW5 issues:
 
 ＿＿＿＿＿＿＿＿＿＿＿
 Archive:
- [x] Upload to github @done (17-01-29 10:07) @project(Ildy)
- [x] Block Quotes needs a CSS update @done (17-01-29 10:07) @project(Ildy)
- [x] Save on lose focus @done (17-01-29 08:33) @project(Ildy)
- [x] ST3 double%2520url%2520encode and emmet lorem ipsum @done (17-01-29 08:33) @project(Ildy)
- [x] Fill the headernavs with links @done (17-01-29 08:33) @project(Ildy)
- [x] See advanced file creater plugin @done (17-01-29 07:14) @project(Ildy)
- [x] Once the folder structure is decided, get the advanced file creater to set up base folder @done (17-01-29 07:14) @project(Ildy)
- [x] Image in posts @done (17-01-29 06:51) @project(Ildy)
- [x] Folder structure @done (17-01-29 06:48) @project(Ildy)
- [x] Set the rendered tiddlers post type to Published. @done (17-01-28 18:58) @project(Ildy)
- [x] In reality there will be a field too with "status" showing published. Edit button will be linked to this field. When you press it, it will turn out blank. If you are using ST3, you will have to set it manually. @done (17-01-28 18:58) @project(How do I view it now)
- [x] Facebook sharing. @done (17-01-28 18:58) @project(Ildy)
+ [x] srcset field @done (17-01-30 07:42) @project(Astrid)
+ [x] headerCategory @done (17-01-30 07:42) @project(Astrid)
+ [x] No need of logoTxt @done (17-01-30 07:42) @project(Astrid)
+ [x] home address, email, $:/footer-text @done (17-01-30 07:41) @project(Astrid)
  

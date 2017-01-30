@@ -1,0 +1,17 @@
+caption: {{$:/language/Buttons/Paint/Caption}}
+condition: [<targetTiddler>is[image]]
+created: 20170129091336100
+description: {{$:/language/Buttons/Paint/Hint}}
+dropdown: $:/core/ui/EditorToolbar/paint-dropdown
+icon: $:/core/images/paint
+modified: 20170129091336100
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/paint
+type: text/vnd.tiddlywiki
+
+\define toolbar-paint()
+<div style="display: inline-block; vertical-align: middle; background-color: $(colour-picker-value)$; width: 1em; height: 1em; border-radius: 50%;"/>
+\end
+<$set name="colour-picker-value" value={{$:/config/BitmapEditor/Colour}}>
+<<toolbar-paint>>
+</$set>

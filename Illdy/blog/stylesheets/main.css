@@ -1234,6 +1234,10 @@ input {
 	width: 100%;
 	margin-bottom: 100px;
 }
+#blog .blog-post.archives {
+	width: 100%;
+	margin-bottom: 0;
+}
 
 #blog .blog-post .blog-post-title {
 	width: 100%;
@@ -1249,6 +1253,9 @@ input {
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 	display: block;
+}
+#blog .blog-post.archives .blog-post-title {
+	font-size: 20px;
 }
 
 #blog .blog-post .blog-post-title:hover {

@@ -218,7 +218,7 @@ type: text/vnd.tiddlywiki
                     <div class="col-sm-10 col-xs-4">
                         <nav class="header-navigation">
                             <ul class="clearfix">
-                                `<$list filter="[!has[draft.of]entry-type[Header-Nav-Item]]">`
+                                `<$list filter="[!has[draft.of]type[blog/header-nav-item]]">`
                                     <li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home"><a id="`{{!!title}}`" href="`{{!!text}}`">`{{!!title}}`</a>
                                     </li>
                                 `</$list>`
@@ -238,7 +238,7 @@ type: text/vnd.tiddlywiki
         <!--/.top-header-->
         <nav class="responsive-menu">
             <ul>
-                `<$list filter="[!has[draft.of]entry-type[Header-navigation]]">`
+                `<$list filter="[!has[draft.of]type[blog/header-nav-item]]">`
                     <li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home"><a target="_blank" href="`<$view field="text"/>`"><span>`<$view field="title"/>`</span></a>
                     </li>
                 `</$list>`
@@ -269,7 +269,7 @@ type: text/vnd.tiddlywiki
             <div class="col-sm-8">
 
                 <section id="blog">
-                `<$list filter="[!has[draft.of]entry-type[Blog-post]]">`
+                `<$list filter="[!has[draft.of]type[blog/blog-post]limit[10]]">`
                     <article id="`{{!!title}}`" class="blog-post post-11 post type-post status-publish format-standard has-post-thumbnail hentry category-news">
                         <a target="_blank" href="`<$view field=title format="doubleurlencoded"/>`.html" title="`{{!!title}}`" class="blog-post-title">`{{!!title}}`</a>
                         <div class="blog-post-image">
@@ -298,13 +298,13 @@ type: text/vnd.tiddlywiki
 
             <div class="col-sm-4">
                 <div id="sidebar">
-                    `<$list filter="[!has[draft.of]entry-type[Sidebar-Category]]">`
+                    `<$list filter="[!has[draft.of]type[blog/sidebar-category]]">`
                     <div id="recent-posts-2" class="widget widget_recent_entries">
                         <div class="widget-title">
                             <h3>`{{!!title}}`</h3>
                         </div>
                         <ul>
-                            `<$list filter="[!has[draft.of]entry-type[Sidebar-Item]tag<currentTiddler>]">`
+                            `<$list filter="[!has[draft.of]type[blog/sidebar-item]tag<currentTiddler>]">`
                             <li>
                                 <a id="`{{!!title}}`" href="`{{!!text}}`">`{{!!title}}`</a>
                             </li>
@@ -326,7 +326,7 @@ type: text/vnd.tiddlywiki
     <footer id="footer">
         <div class="container">
             <div class="row">
-             `<$list filter="[!has[draft.of]entry-type[Footer-Category]]">`
+             `<$list filter="[!has[draft.of]type[blog/footer-category]]">`
                 <div class="col-sm-3">
                     <div id="text-5" class="widget widget_text">
                         <div class="widget-title">
@@ -334,7 +334,7 @@ type: text/vnd.tiddlywiki
                         </div>
                         <div class="textwidget">
                             <ul>
-                            `<$list filter="[!has[draft.of]entry-type[Footer-Item]tag<currentTiddler>]">`
+                            `<$list filter="[!has[draft.of]type[blog/footer-item]tag<currentTiddler>]">`
                             <li>
                                 <a id="`{{!!title}}`" href="`{{!!text}}`">`{{!!title}}`</a>
                             </li>

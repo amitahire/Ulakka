@@ -214,7 +214,8 @@ type:
                 <div class="row">
                     <div class="col-sm-2 col-xs-8">
 
-                        <a href="#" title="sub-header-title" class="header-logo">`{{$:/headerLogo}}`</a>
+                        <a href="index.html
+                        " title="sub-header-title" class="header-logo">`{{$:/headerLogo}}`</a>
 
                     </div>
                     <!--/.col-sm-2-->
@@ -273,7 +274,7 @@ type:
 
                 <section id="blog">
                 `<$list filter="[!has[draft.of]type[blog/blog-post]rest[10]]">`
-                    <article id="`{{!!title}}`" class="blog-post post-11 post type-post status-publish format-standard has-post-thumbnail hentry category-news">
+                    <article id="`{{!!title}}`" class="blog-post archives post type-post status-publish format-standard has-post-thumbnail hentry category-news">
                         <a target="_blank" href="`<$view field=title format="doubleurlencoded"/>`.html" title="`{{!!title}}`" class="blog-post-title">`{{!!title}}`</a>
                          <div class="blog-post-meta">    
                             <span class="post-meta-author"><i class="fa fa-user"></i>`<$view field="modifier"/>`</span>

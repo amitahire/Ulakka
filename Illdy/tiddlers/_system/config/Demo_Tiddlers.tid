@@ -1,0 +1,12 @@
+caption: Demo
+created: 20170127144437425
+list: 
+list-after: $:/core/ui/SideBar/Open
+modified: 20170129123319186
+tags: $:/tags/SideBar
+title: Demo Tiddlers
+type: text/vnd.tiddlywiki
+
+<div class="tc-table-of-contents">
+<<toc-selective-expandable 'Demo' "sort[type]">>
+</div>

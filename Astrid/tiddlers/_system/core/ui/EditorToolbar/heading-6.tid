@@ -1,0 +1,17 @@
+caption: {{$:/language/Buttons/Heading6/Caption}}
+condition: [is[tiddler]<targetTiddler>]
+created: 20170129090039301
+description: {{$:/language/Buttons/Heading6/Hint}}
+icon: $:/core/images/heading-6
+modified: 20170129090551035
+shortcuts: ((heading-6))
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/heading-6
+type: text/vnd.tiddlywiki
+
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="prefix-lines"
+	character="!"
+	count="6"
+/>

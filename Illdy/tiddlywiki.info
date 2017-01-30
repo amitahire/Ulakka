@@ -23,7 +23,7 @@
             "./blog",
             "--rendertiddler",
             "archiveTemplate",
-            "archive.html",
+            "archives.html",
             "text/plain"
         ],
         "posts": [

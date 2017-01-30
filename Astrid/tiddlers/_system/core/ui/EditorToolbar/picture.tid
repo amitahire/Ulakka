@@ -1,0 +1,12 @@
+caption: {{$:/language/Buttons/Picture/Caption}}
+condition: [is[tiddler]<targetTiddler>]
+created: 20170129090039303
+description: {{$:/language/Buttons/Picture/Hint}}
+dropdown: $:/core/ui/EditorToolbar/picture-dropdown
+icon: $:/core/images/picture
+modified: 20170129090551004
+shortcuts: ((picture))
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/picture
+type: text/vnd.tiddlywiki
+
