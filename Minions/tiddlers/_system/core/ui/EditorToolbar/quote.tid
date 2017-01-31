@@ -1,0 +1,18 @@
+caption: {{$:/language/Buttons/Quote/Caption}}
+condition: [is[tiddler]<targetTiddler>]
+created: 20170129090039296
+description: {{$:/language/Buttons/Quote/Hint}}
+icon: $:/core/images/quote
+modified: 20170129090550908
+shortcuts: ((quote))
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/quote
+type: text/vnd.tiddlywiki
+
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="wrap-lines"
+	prefix="
+<<<"
+	suffix="<<<"
+/>

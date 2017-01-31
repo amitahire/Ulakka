@@ -1,0 +1,11 @@
+caption: {{$:/language/Buttons/Clear/Caption}}
+condition: [<targetTiddler>is[image]]
+created: 20170129091336124
+description: {{$:/language/Buttons/Clear/Hint}}
+dropdown: $:/core/ui/EditorToolbar/clear-dropdown
+icon: $:/core/images/erase
+modified: 20170129091336124
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/clear
+type: text/vnd.tiddlywiki
+

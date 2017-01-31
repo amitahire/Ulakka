@@ -1,8 +1,8 @@
 created: 20170127142306227
 doubleencodedurl: Miscellaneous entry with spaces in tile
 modified: 20170129103615862
-tags: Demo [[Footer Category1]]
-title: FooterItem1
-type: blog/footer-item
+tags: Demo Tab1
+title: Reddit Link Tab Item
+type: blog/tab-item
 
 https://www.reddit.com/r/TiddlyWiki5/

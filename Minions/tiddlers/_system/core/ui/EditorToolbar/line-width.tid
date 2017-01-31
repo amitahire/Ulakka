@@ -1,0 +1,12 @@
+caption: {{$:/language/Buttons/LineWidth/Caption}}
+condition: [<targetTiddler>is[image]]
+created: 20170129091336136
+description: {{$:/language/Buttons/LineWidth/Hint}}
+dropdown: $:/core/ui/EditorToolbar/line-width-dropdown
+icon: $:/core/images/line-width
+modified: 20170129091336136
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/line-width
+type: text/vnd.tiddlywiki
+
+<$text text={{$:/config/BitmapEditor/LineWidth}}/>

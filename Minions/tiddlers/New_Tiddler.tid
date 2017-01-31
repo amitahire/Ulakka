@@ -1,0 +1,9 @@
+created: 20170130130030086
+modified: 20170130131905994
+tags: 
+title: New Tiddler
+type: text/vnd.tiddlywiki
+
+<$button>Yo
+<$list filter="[has[doubleencodedurl]]">
+<$action-setfield $field="doubleencodedurl"/>

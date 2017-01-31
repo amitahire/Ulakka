@@ -1,0 +1,9 @@
+caption: {{$:/language/SideBar/More/Caption}}
+created: 20170127144417516
+modified: 20170127144419200
+title: $:/core/ui/SideBar/More
+type: text/vnd.tiddlywiki
+
+<div class="tc-more-sidebar">
+<<tabs "[all[shadows+tiddlers]tag[$:/tags/MoreSideBar]!has[draft.of]]" "$:/core/ui/MoreSideBar/Tags" "$:/state/tab/moresidebar" "tc-vertical">>
+</div>
