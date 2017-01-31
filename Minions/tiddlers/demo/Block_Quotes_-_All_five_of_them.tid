@@ -1,8 +1,7 @@
 created: 20170125124507768
-imgsrc: images/demo1.jpg
-modified: 20170129103615729
+modified: 20170131131300001
 modifier: Riz
-summary: Fusce id egestas elit, sed rutrum arcu. Vestibulum molestie leo consectetur orci efficitur, a commodo mi venenatis. Aliquam eu quam commodo, aliquam elit et, tincidunt erat. Duis malesuada tempor rutrum. Donec porttitor quam vitae lectus dignissim, id blandit sem laoreet. Ut maximus enim vel varius tincidunt. Ut aliquet dolor quam, tincidunt pulvinar turpis viverra nec. In odio lectus, rutrum nec fringilla sit amet, vulputate id metus. Praesent non condimentum sem.
+summary:  <blockquote><p>  Have you ever had the feeling that your head is not quite big enough to hold everything you need to remember? </p> <div><cite> Jermolene </cite></div> </blockquote>
 tags: Demo
 title: Block Quotes A lot of them
 type: blog/blog-post
@@ -21,9 +20,9 @@ I saw that show, 50 Things To Do Before You Die. I would have thought the obviou
 Jimmy Carr 
 
 
-<blockquote>
+<blockquote><p>
 Cheryl Cole got malaria...well I guess that answers the question what do you give someone who has everything
-</blockquote>
+</p></blockquote>
 
 Sean Lock
 

@@ -1,10 +1,11 @@
 created: 20170125123924015
 modified: 20170129103615942
 modifier: Riz
-summary: Fusce id egestas elit, sed rutrum arcu. Vestibulum molestie leo consectetur orci efficitur, a commodo mi venenatis. Aliquam eu quam commodo, aliquam elit et, tincidunt erat. Duis malesuada tempor rutrum. Donec porttitor quam vitae lectus dignissim, id blandit sem laoreet. Ut maximus enim vel varius tincidunt. Ut aliquet dolor quam, tincidunt pulvinar turpis viverra nec. In odio lectus, rutrum nec fringilla sit amet, vulputate id metus. Praesent non condimentum sem.
+summary: This is a summary of the post. If you want text to appear here, create a field called summary and add text to it. If you want images to appear here, create a field called imgsrc and place a link to your images. For eg: if you placed your link in blog/images, the the link will simply say images/demo1.jpg. You can add blockquotes also with appropriate styling so that it appears on the index page. So much for Summary.
 tags: Demo
 title: Fourth Long Post in Plain Text
 type: blog/blog-post
+imgsrc: images/demo5.jpg
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat, dolor a sollicitudin varius, erat eros imperdiet quam, sed egestas sapien massa nec purus. Sed orci justo, posuere sit amet condimentum ac, malesuada quis neque. In varius blandit enim ac rhoncus. Pellentesque dignissim justo id molestie auctor. Sed et dui velit. Duis eu aliquam nibh. Donec posuere est libero, dictum dignissim nulla interdum in. Cras laoreet orci ut magna commodo, non suscipit justo egestas. Donec porta sollicitudin convallis. Phasellus pellentesque augue in felis congue sagittis. Duis a tincidunt tortor.
 

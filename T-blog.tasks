@@ -10,6 +10,7 @@ Documentation:
   [ ] Once the -setfield command is usable. 
   [ ] ? Grunt file anyone?
   [ ] ?Sublime build system
+  [ ] You can delete all demo tiddlers. Also all the images in blog/images
 Astrid Documentation:
   [ ] logo footer
 Ildy:
@@ -21,6 +22,13 @@ Astrid:
   [ ] postTemplate
   [ ] Archive Template
   [ ] New tiddler should have imgsrc field
+Minions:
+  [ ] postTemplate
+  [ ] archiveTemplate
+  [ ] Few more index pages
+  [ ] Space after tags
+  [ ] user images
+  [ ] Nav before and after in index
 Future:
   [ ] Epub chain.
         [ ] Build Static HTML files. Use pandoc to convert them to Epub. 
@@ -52,6 +60,7 @@ TW5 issues:
 
 ＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ [x] Create a new button for the blockquote with cite @done (17-01-31 14:14) @project(Minions)
  [x] http://demo.athemes.com/astrid/blog/ @done (17-01-30 10:30) @project(Future)
  [x] srcset field @done (17-01-30 07:42) @project(Astrid)
  [x] headerCategory @done (17-01-30 07:42) @project(Astrid)

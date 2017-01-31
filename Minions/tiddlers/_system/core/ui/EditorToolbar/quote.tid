@@ -1,9 +1,9 @@
 caption: {{$:/language/Buttons/Quote/Caption}}
 condition: [is[tiddler]<targetTiddler>]
-created: 20170129090039296
+created: 20170131075624092
 description: {{$:/language/Buttons/Quote/Hint}}
 icon: $:/core/images/quote
-modified: 20170129090550908
+modified: 20170131083357119
 shortcuts: ((quote))
 tags: $:/tags/EditorToolbar
 title: $:/core/ui/EditorToolbar/quote
@@ -13,6 +13,11 @@ type: text/vnd.tiddlywiki
 	$message="tm-edit-text-operation"
 	$param="wrap-lines"
 	prefix="
-<<<"
-	suffix="<<<"
+<blockquote><p>"
+	suffix="
+</p>
+<div><cite>  
+
+</cite></div>
+</blockquote>"
 />

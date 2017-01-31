@@ -1,9 +1,9 @@
 created: 20170125124507768
-imgsrc: images/demo3.jpg
-modified: 20170129103615795
+imgsrc: images/demo2.jpg
+modified: 20170131164128001
 modifier: Riz
-summary: Fusce id egestas elit, sed rutrum arcu. Vestibulum molestie leo consectetur orci efficitur, a commodo mi venenatis. Aliquam eu quam commodo, aliquam elit et, tincidunt erat. Duis malesuada tempor rutrum. Donec porttitor quam vitae lectus dignissim, id blandit sem laoreet. Ut maximus enim vel varius tincidunt. Ut aliquet dolor quam, tincidunt pulvinar turpis viverra nec. In odio lectus, rutrum nec fringilla sit amet, vulputate id metus. Praesent non condimentum sem.
-tags: Demo
+summary: This is a summary of the post. If you want text to appear here, create a field called summary and add text to it. If you want images to appear here, create a field called imgsrc and place a link to your images. For eg: if you placed your link in blog/images, the the link will simply say images/demo1.jpg. You can add blockquotes also with appropriate styling so that it appears on the index page. So much for Summary.
+tags: Demo Freelance Geronimo 
 title: Eighth Long Post in Plain Text
 type: blog/blog-post
 
