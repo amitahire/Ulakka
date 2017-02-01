@@ -1,0 +1,17 @@
+caption: {{$:/language/Buttons/MonoLine/Caption}}
+condition: [is[tiddler]<targetTiddler>]
+created: 20170129090039294
+description: {{$:/language/Buttons/MonoLine/Hint}}
+icon: $:/core/images/mono-line
+modified: 20170129090550749
+shortcuts: ((mono-line))
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/mono-line
+type: text/vnd.tiddlywiki
+
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="wrap-selection"
+	prefix="`"
+	suffix="`"
+/>

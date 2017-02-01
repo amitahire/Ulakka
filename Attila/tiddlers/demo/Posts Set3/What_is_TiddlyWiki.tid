@@ -1,0 +1,29 @@
+created: 20170125120601296
+modified: 20170125103616210
+modifier: Riz
+summary: Fusce id egestas elit, sed rutrum arcu. Vestibulum molestie leo consectetur orci efficitur, a commodo mi venenatis. Aliquam eu quam commodo, aliquam elit et, tincidunt erat. Duis malesuada tempor rutrum. Donec porttitor quam vitae lectus dignissim, id blandit sem laoreet. Ut maximus enim vel varius tincidunt. Ut aliquet dolor quam, tincidunt pulvinar turpis viverra nec. In odio lectus, rutrum nec fringilla sit amet, vulputate id metus. Praesent non condimentum sem.
+tags: Demo
+title: What is TiddlyWiki  Third Set
+type: blog/blog-post
+
+TiddlyWiki is a non-traditional notetaking software that is
+
+# Free and Opensource
+# Cross-Platform [Windows, Mac, Linux, Android....]
+# Portable - lets you keep your data with you.
+# Modular - add and remove parts of it as you deem fit.
+# Customisable - everything from font to that one icon in the corner which you didn't like.
+# Humongously large - for a floppy disk. 2MB is the size of the platform. Rest of your harddisk space can be filled with your notes if you please.
+
+It lets you
+
+* to organize your notes or data as you please. Want to divide and view them as tabs/sidebar? Done! No?, more of a link-to-other-note person? Here is a way for that. Wait, you want them both? Darn, that can be done too.
+* export all/subset of your notes to formats like txt, CSV, JSON or HTML.
+* put the whole thing in your dropbox account/other cloud services and access the software from anywhere and practically any device. Or just self-host it if you are bitten by the nerd spider.
+* code your way and transform it into a whole another beast if you like it to be, or just download the beasts already created by other geniuses.
+
+"""
+Relevant links:
+ [ext[Tiddlywiki.com|http://tiddlywiki.com/]]
+[ext[/r/TiddlyWiki5|https://www.reddit.com/r/TiddlyWiki5/]]
+ [ext[Google groups|https://groups.google.com/forum/#!forum/tiddlywiki]]   

@@ -1,0 +1,17 @@
+caption: {{$:/language/Buttons/Superscript/Caption}}
+condition: [is[tiddler]<targetTiddler>]
+created: 20170129090039291
+description: {{$:/language/Buttons/Superscript/Hint}}
+icon: $:/core/images/superscript
+modified: 20170129090550782
+shortcuts: ((superscript))
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/superscript
+type: text/vnd.tiddlywiki
+
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="wrap-selection"
+	prefix="^^"
+	suffix="^^"
+/>

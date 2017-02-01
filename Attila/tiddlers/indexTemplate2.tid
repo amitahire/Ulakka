@@ -1,0 +1,154 @@
+caption: 
+created: 20170126024241898
+modified: 20170129125144137
+modifier: Riz
+status: 
+summary: 
+title: indexTemplate2
+type: text/vnd.tiddlywiki
+
+`<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>`{{$:/SiteTitle}}`</title>
+    <meta name="description" content="`{{$:/SiteSubtitle}}`">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="canonical" href="`{{$:/Home}}`">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="next" href="`{{$:/Home}}`/index3.html">
+    <link rel="prev" href="`{{$:/Home}}`/index.html">
+    <meta property="og:site_name" content="`{{$:/SiteTitle}}`">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="`{{$:/SiteTitle}}`">
+    <meta property="og:description" content="T-blog Theme">
+    <meta name="twitter:title" content="`{{$:/SiteTitle}}`">
+    <meta name="twitter:description" content="T-blog Theme">
+    
+    <script type="text/javascript" defer="defer" async="" src="js/piwik.js"></script>
+
+
+    <meta name="generator" content="TW5">
+    <meta name="robots" content="noindex,nofollow">
+    <style id="fit-vids-style">
+        .fluid-width-video-wrapper{width:100%;position:relative;padding:0;}
+        .fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;} 
+    </style>
+</head>
+
+<body class="home-template">
+    
+    <nav id="menu">
+    <a class="close-button">Close</a>
+    <div class="nav-wrapper">
+        <p class="nav-label">Menu</p>
+        <ul>
+            <li class="nav-home active" role="presentation"><a href="index.html">Home</a></li>
+            `<$list filter="[!has[draft.of]type[blog/sidebar-item]]">`
+            <li class="nav-about" role="presentation"><a href="`{{!!text}}`">`{{!!title}}`</a></li>            
+            `</$list>`
+        </ul>
+    </div>
+</nav>
+    
+    <section id="wrapper">
+        <a class="hidden-close"></a>
+        
+<header id="blog-header">
+    <div class="inner">
+        <nav id="navigation">
+            <span id="menu-button" class="nav-button">
+                <a class="menu-button"><i class="fa fa-bars" aria-hidden="true"></i> Menu</a>
+            </span>
+        </nav>
+        <h1 class="blog-name"><a href="`{{$:/Home}}`">`{{$:/SiteTitle}}`</a></h1>
+        <span class="blog-description">`{{$:/SiteSubtitle}}`</span>
+    </div>
+</header>
+
+<div id="index" class="container">
+
+    <main class="content" role="main">
+    
+        <div class="extra-pagination">
+    <nav class="pagination" role="pagination">
+    <div class="inner">
+        <span class="pagination-info">Page 2 of 3</span>
+        <a class="pagination-prev" href="index.html"><span class="pagination-label">Older Posts</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        <a class="pagination-next" href="index3.html"><i class="fa fa-angle-left"></i> <span class="pagination-label">Newer Posts</span></a>
+        <div class="clear"></div>
+    </div>
+</nav>
+</div>
+
+`<$list filter="[!has[draft.of]type[blog/blog-post]rest[10]limit[10]]">`
+<article class="post tag-general">
+    <div class="inner">
+        <header class="post-header">
+            <h2 class="post-title"><a href="`<$view field=title format='doubleurlencoded'/>`.html">`{{!!title}}`</a></h2>
+            <span class="post-meta"><a href="#">`{{!!modifier}}`</a>  on `<$list filter="[all[current]tags[]sort[title]]">`<a rel="category tag">`<<currentTiddler>>`</a>&nbsp;&nbsp;&nbsp;`</$list>` | <time>`<$view field="modified" format="date" template="DDth MMM, YYYY"/>`</time></span>
+            <div class="clear"></div>
+        </header>
+
+        <section class="post-excerpt">
+           <p> `<$view field=summary format="htmlwikified"/>`</p>
+        </section>
+    </div>
+</article>
+`</$list>`
+
+
+
+
+<nav class="pagination" role="pagination">
+    <div class="inner">
+        <span class="pagination-info">Page 2 of 3</span>
+        <a class="pagination-prev" href="index3.html"><span class="pagination-label">Older Posts</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        <a class="pagination-next" href="index.html"><i class="fa fa-angle-left"></i> <span class="pagination-label">Newer Posts</span></a>
+        <div class="clear"></div>
+    </div>
+</nav>  
+    </main>
+
+</div>
+        <div id="body-class" style="display: none;" class="home-template"></div>
+    
+        <footer id="footer">
+            <div class="inner">
+                <section class="credits">
+                     <span class="credits-software">`{{$:/footerText}}`</span>
+                </section>
+            </div>
+        </footer>
+    </section>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <!-- You can safely delete this line if your theme does not require jQuery -->
+<script type="text/javascript" src="js/jquery-1.js"></script>
+
+<!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+    
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.zutrinken.com/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "9"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Piwik Code -->
+
+
+</body></html>`

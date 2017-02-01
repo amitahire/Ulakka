@@ -273,7 +273,7 @@ type:
                                         </div>
                                         <div class="entry-content">
                                             `<$view field="summary" format="htmlwikified"/>`
-                                            <a href="http://demo.designwall.com/dw-minion/2013/06/20/the-inside-secrets-of-millionaires-under-the-age-of-29/" class="more-link"><span class="btn btn-small">Continue reading</span></a>
+                                            <a href="`<$view field=title format='doubleurlencoded'/>`.html" class="more-link"><span class="btn btn-small">Continue reading</span></a>
                                         </div>
                                     </article>
                                     `</$list>`
@@ -284,7 +284,7 @@ type:
                                             <span class="btn disabled"><i class="icon-chevron-left"></i></span>
                                         </div>
                                         <div class="nav-next">
-                                            <a href="#"><span class="meta-nav btn"><i class="icon-chevron-right"></i></span></a> </div>
+                                            <a href="index2.html"><span class="meta-nav btn"><i class="icon-chevron-right"></i></span></a> </div>
                                     </nav>
                                 </div>
                             </div>
@@ -307,7 +307,7 @@ type:
                                         <ul>
                                         `<$list filter="[!has[draft.of]type[blog/tab-item]tag<currentTiddler>]">`
                                             <li>
-                                                <a href="http://demo.designwall.com/dw-minion/2013/06/20/the-inside-secrets-of-millionaires-under-the-age-of-29/">`{{!!title}}`</a>
+                                                <a href="`{{!!text}}`">`{{!!title}}`</a>
                                             </li>
                                          `</$list>`
                                         </ul>

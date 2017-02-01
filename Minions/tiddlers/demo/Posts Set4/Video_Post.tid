@@ -1,0 +1,15 @@
+created: 20141126153016142
+modified: 20170125103616210
+modifier: Riz
+summary: Fusce id egestas elit, sed rutrum arcu. Vestibulum molestie leo consectetur orci efficitur, a commodo mi venenatis. Aliquam eu quam commodo, aliquam elit et, tincidunt erat. Duis malesuada tempor rutrum. Donec porttitor quam vitae lectus dignissim, id blandit sem laoreet. Ut maximus enim vel varius tincidunt. Ut aliquet dolor quam, tincidunt pulvinar turpis viverra nec. In odio lectus, rutrum nec fringilla sit amet, vulputate id metus. Praesent non condimentum sem.
+tags: Videos [[Working with TiddlyWiki]] Demo
+title: Video Post  Fourth Set
+type: blog/blog-post
+
+This brief presentation explains the basic principles of TiddlyWiki.
+<div style="text-align:center">
+<iframe width="720" height="450" src="http://www.youtube.com/embed/KtCUr83XgyE" frameborder="0" allowfullscreen></iframe>
+</div>
+The TiddlyWiki used to produce the video can be found here:
+
+http://tiddlywiki.com/editions/introduction/

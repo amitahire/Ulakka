@@ -1,0 +1,12 @@
+caption: {{$:/language/Buttons/Stamp/Caption}}
+condition: [is[tiddler]<targetTiddler>]
+created: 20170129090039303
+description: {{$:/language/Buttons/Stamp/Hint}}
+dropdown: $:/core/ui/EditorToolbar/stamp-dropdown
+icon: $:/core/images/stamp
+modified: 20170129090550997
+shortcuts: ((stamp))
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/stamp
+type: text/vnd.tiddlywiki
+

@@ -1,0 +1,17 @@
+caption: {{$:/language/Buttons/Italic/Caption}}
+condition: [is[tiddler]<targetTiddler>]
+created: 20170129090039286
+description: {{$:/language/Buttons/Italic/Hint}}
+icon: $:/core/images/italic
+modified: 20170129090550814
+shortcuts: ((italic))
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/italic
+type: text/vnd.tiddlywiki
+
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="wrap-selection"
+	prefix="//"
+	suffix="//"
+/>

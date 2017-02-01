@@ -4991,15 +4991,16 @@ iframe[id^="oauth2relay"] {
   line-height: 40px;
   float: left;
   margin: 0;
-  width: 100%;
+  width: auto;
   margin-right: -110px;
-  padding-right: 110px;
+  padding-right: 150px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  max-width: 70%;
 }
 .related-meta {
   float: right;

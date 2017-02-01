@@ -16,6 +16,14 @@
             "--rendertiddler",
             "indexTemplate",
             "index.html",
+            "text/plain",
+            "--rendertiddler",
+            "indexTemplate2",
+            "index2.html",
+            "text/plain",
+            "--rendertiddler",
+            "indexTemplate3",
+            "index3.html",
             "text/plain"
         ],
         "archive": [

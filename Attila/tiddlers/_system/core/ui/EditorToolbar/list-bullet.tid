@@ -1,0 +1,17 @@
+caption: {{$:/language/Buttons/ListBullet/Caption}}
+condition: [is[tiddler]<targetTiddler>]
+created: 20170129090039296
+description: {{$:/language/Buttons/ListBullet/Hint}}
+icon: $:/core/images/list-bullet
+modified: 20170129090550898
+shortcuts: ((list-bullet))
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/list-bullet
+type: text/vnd.tiddlywiki
+
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="prefix-lines"
+	character="*"
+	count="1"
+/>

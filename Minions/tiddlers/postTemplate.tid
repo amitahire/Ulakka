@@ -15,9 +15,7 @@ type:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>`{{!!title}}`</title>
-    <link rel="dns-prefetch" href="http://s.w.org/">
-    <link rel="alternate" type="application/rss+xml" title="DW Minion » Feed" href="#">
-    <link rel="alternate" type="application/rss+xml" title="DW Minion » Comments Feed" href="#">
+    <link rel="dns-prefetch" href="http://s.w.org/">    
     <script id="db-js-sdk" src="js/sdk.js"></script>
     <script async="" src="js/analytics.js"></script>
     <script type="text/javascript">
@@ -178,7 +176,7 @@ type:
                     <div class="container">
                         <header id="masthead" class="site-header" role="banner">
                             <h1 class="site-title display-logo"><a href="#" title="DW Minion" rel="home"><img alt="`{{$:/status/UserName}}`" src="`{{$:/userImage}}`"></a></h1>
-                            <p class="site-subtitle">`{{$:/SiteTitle}}`</p>
+                            <a href="index.html"><p class="site-subtitle">`{{$:/SiteTitle}}`</p></a>
                             <h2 class="site-description">`{{$:/SiteSubtitle}}`</h2> </header>
                         <div id="main-sidebar" class="widget-area" role="complementary">
                            `<$list filter="[!has[draft.of]type[blog/sidebar-category]]">`
@@ -245,7 +243,7 @@ type:
                                     <article id="`{{!!title}}`" class="post type-post status-publish format-standard has-post-thumbnail hentry category-delicious category-freelancing category-photography tag-playing tag-shopping">
                                         <header class="entry-header">
                                             <h2 class="entry-title">
-                                            	<a target="_blank" href="`<$view field=title format='doubleurlencoded'/>`.html" title="`{{!!title}}`" class="blog-post-title">`{{!!title}}`</a>
+                                            	<a href="`<$view field=title format='doubleurlencoded'/>`.html" title="`{{!!title}}`" class="blog-post-title">`{{!!title}}`</a>
                                             </h2>
                                             <div class="entry-meta">
                                             	<span class="byline">By <span class="author vcard"><a class="url fn n" title="Author">`{{!!modifier}}`</a></span></span>
@@ -278,27 +276,13 @@ type:
                                     <div class="related-posts">
 			<h2 class="related-posts-title">Related Articles.</h2>
 			<div class="related-content">
-								<article class="related-post clearfix">
-					<h3 class="related-title"><a href="http://demo.designwall.com/dw-minion/2013/06/16/responsive-wordpress-themes/" rel="bookmark">Responsive WordPress Themes</a></h3>
-					<div class="related-meta"><time class="related-date">16 Jun, 2013</time></div>
+			`<$list filter="[!has[draft.of]type[blog/blog-post]tag{!!tags}!sort[modified]limit[5]]">`
+				<article class="related-post clearfix">
+					<h3 class="related-title"><a href="`<$view field=title format='doubleurlencoded'/>`.html" rel="bookmark">`{{!!title}}`</a></h3>
+					<div class="related-meta"><time class="related-date">`<$view field="modified" format="date" template="DDth MMM, YYYY"/>`</time></div>
 				</article>
-								<article class="related-post clearfix">
-					<h3 class="related-title"><a href="http://demo.designwall.com/dw-minion/2013/05/28/finally-an-acne-cream-that-actually-does-what-it-says/" rel="bookmark">Finally! An Acne Cream That Actually Does What It Says</a></h3>
-					<div class="related-meta"><time class="related-date">28 May, 2013</time></div>
-				</article>
-								<article class="related-post clearfix">
-					<h3 class="related-title"><a href="http://demo.designwall.com/dw-minion/2013/04/26/unlock-the-secrets-of-selling-high-ticket/" rel="bookmark">Unlock The Secrets Of Selling High Ticket</a></h3>
-					<div class="related-meta"><time class="related-date">26 Apr, 2013</time></div>
-				</article>
-								<article class="related-post clearfix">
-					<h3 class="related-title"><a href="http://demo.designwall.com/dw-minion/2013/03/14/take-advantage-of-the-stock-market/" rel="bookmark">Take Advantage Of The Stock Market</a></h3>
-					<div class="related-meta"><time class="related-date">14 Mar, 2013</time></div>
-				</article>
-								<article class="related-post clearfix">
-					<h3 class="related-title"><a href="http://demo.designwall.com/dw-minion/2012/09/03/top-search-engine-optimization-strategies/" rel="bookmark">Top Search Engine Optimization Strategies</a></h3>
-					<div class="related-meta"><time class="related-date">03 Sep, 2012</time></div>
-				</article>
-							</div>
+			`</$list>`
+			</div>
 		</div>
                                     
                                     
@@ -323,7 +307,7 @@ type:
                                         <ul>
                                         `<$list filter="[!has[draft.of]type[blog/blog-post]!sort[modified]limit[5]]">`
                                             <li>
-                                                <a href="http://demo.designwall.com/dw-minion/2013/06/20/the-inside-secrets-of-millionaires-under-the-age-of-29/">`{{!!title}}`</a>
+                                                <a href="`<$view field=title format='doubleurlencoded'/>`.html">`{{!!title}}`</a>
                                             </li>
                                          `</$list>`
                                         </ul>
@@ -348,7 +332,7 @@ type:
                                         <ul>
                                         `<$list filter="[!has[draft.of]type[blog/tab-item]tag<currentTiddler>]">`
                                             <li>
-                                                <a href="http://demo.designwall.com/dw-minion/2013/06/20/the-inside-secrets-of-millionaires-under-the-age-of-29/">`{{!!title}}`</a>
+                                                <a href="`<$view field=title format='doubleurlencoded'/>`.html">`{{!!title}}`</a>
                                             </li>
                                          `</$list>`
                                         </ul>
