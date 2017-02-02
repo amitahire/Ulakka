@@ -132,8 +132,41 @@
                     <h1>Sublime Text Workflow</h1>
                     <p> <!-- Creating a Table of Contents -->                    
                         
+                            <a href="#Keybindings">Keybindings</a><br/>
+                        
                     </p>
                     <p><p><div class="code">
+  <nav class="nav-filename icon-file">
+    product.html
+  </nav>
+  <pre class=" numbered language-html"><code class=" language-html"><span class="token property">&lt;snippet&gt;</span>
+<span class="token property">&lt;content&gt;&lt;![CDATA[</span>
+<span class="token property">title: ${TM_FILENAME/\.tid//g} </span>
+<span class="token property">tags: $2</span>
+<span class="token property">created: $3</span>
+<span class="token property">modified: $4</span>
+<span class="token property">modifier: ${5:Riz}</span>
+<span class="token property">summary: $6</span>
+<span class="token property">caption: $7</span>
+<span class="token property">type: ${8:blog/blog-post}</span>
+<span class="token property"></span>
+<span class="token property">$0</span>
+<span class="token property"></span>
+<span class="token property">]]&gt;&lt;/content&gt;</span>
+<span class="token property">&lt;!– Optional: Set a tabTrigger to define how to trigger the snippet –&gt;</span>
+<span class="token property">&lt;tabTrigger&gt;tdh&lt;/tabTrigger&gt;</span>
+<span class="token property">&lt;description&gt;Tiddler header&lt;/description&gt;</span>
+<span class="token property">&lt;!– Optional: Set a scope to limit where the snippet will trigger –&gt;</span>
+<span class="token property">&lt;scope&gt;text.tid&lt;/scope&gt;</span>
+<span class="token property">&lt;/snippet&gt;</span></code></pre></div></p></p>
+                </header>
+
+ 
+                <!-- Tiddlers Listed Here -->
+                
+                <section>
+                    <h2 id="Keybindings">Keybindings<a class="anchor" href="#plans"></a></h2>
+ 					<p><div class="code">
   <nav class="nav-filename icon-file">
     product.html
   </nav>
@@ -141,11 +174,10 @@
 <span class="token property">{ &quot;keys&quot;: [&quot;f5&quot;], &quot;command&quot;: &quot;insert_date&quot;, &quot;args&quot;: {&quot;format&quot;: &quot;%Y%m%d%H%M%S001&quot;} },</span>
 
 </code><span class="line-numbers"><span></span><span></span></span></pre>
-</div></p></p>
-                </header>
+</div></p>
+                    
+                </section>
 
- 
-                <!-- Tiddlers Listed Here -->
                 
 
                 <!-- Footer Tiddler -->

@@ -9,13 +9,28 @@ type:
 order: 60
 
 
-
+Go to Preferences>Browse Packages. Inside the User folder create a file with the extension ''.sublime-snippet'' for eg: tiddlerHeader.sublime-snippet
 <div class="code">
   <nav class="nav-filename icon-file">
-    product.html
+    tiddlerHeader.sublime-snippet
   </nav>
-  <pre class=" numbered language-html"><code class=" language-html"><span class="token property">{ "keys": ["f3"], "command": "url_encode" },</span>
-<span class="token property">{ "keys": ["f5"], "command": "insert_date", "args": {"format": "%Y%m%d%H%M%S001"} },</span>
-
-</code><span class="line-numbers"><span></span><span></span></span></pre>
-</div>
+  <pre class=" numbered language-html"><code class=" language-html"><span class="token property">&lt;snippet&gt;</span>
+<span class="token property">&lt;content&gt;&lt;![CDATA[</span>
+<span class="token property">title: ${TM_FILENAME/\.tid&#x2F;&#x2F;g} </span>
+<span class="token property">tags: $2</span>
+<span class="token property">created: $3</span>
+<span class="token property">modified: $4</span>
+<span class="token property">modifier: ${5:Riz}</span>
+<span class="token property">summary: $6</span>
+<span class="token property">caption: $7</span>
+<span class="token property">type: ${8:blog/blog-post}</span>
+<span class="token property"></span>
+<span class="token property">$0</span>
+<span class="token property"></span>
+<span class="token property">]]&gt;&lt;/content&gt;</span>
+<span class="token property">&lt;!-- Optional: Set a tabTrigger to define how to trigger the snippet --&gt;</span>
+<span class="token property">&lt;tabTrigger&gt;tdh&lt;/tabTrigger&gt;</span>
+<span class="token property">&lt;description&gt;Tiddler header&lt;/description&gt;</span>
+<span class="token property">&lt;!-- Optional: Set a scope to limit where the snippet will trigger --&gt;</span>
+<span class="token property">&lt;scope&gt;text.tid&lt;/scope&gt;</span>
+<span class="token property">&lt;/snippet&gt;</span></code></pre></div>
