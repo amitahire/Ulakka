@@ -1,0 +1,20 @@
+title: Keybindings 
+tags: [[Sublime Text Workflow]]
+created: 20170203004255001
+modified: 20170203004256001
+modifier: Riz
+summary: 
+caption: 
+order: 20
+
+
+<div class="code">
+  <nav class="nav-filename icon-file">
+    product.html
+  </nav>
+  <pre class=" numbered language-html"><code class=" language-html"><span class="token property">{ "keys": ["f3"], "command": "url_encode" },</span>
+<span class="token property">{ "keys": ["f5"], "command": "insert_date", "args": {"format": "%Y%m%d%H%M%S001"} },</span>
+
+</code><span class="line-numbers"><span></span><span></span></span></pre>
+</div>
+

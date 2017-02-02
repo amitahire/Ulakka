@@ -1,0 +1,21 @@
+title: Sublime Text Workflow 
+tags: TableOfContents
+created: 20170202185452001
+modified: 20170202185453001
+modifier: Riz
+summary: 
+caption: 
+type: 
+order: 60
+
+
+
+<div class="code">
+  <nav class="nav-filename icon-file">
+    product.html
+  </nav>
+  <pre class=" numbered language-html"><code class=" language-html"><span class="token property">{ "keys": ["f3"], "command": "url_encode" },</span>
+<span class="token property">{ "keys": ["f5"], "command": "insert_date", "args": {"format": "%Y%m%d%H%M%S001"} },</span>
+
+</code><span class="line-numbers"><span></span><span></span></span></pre>
+</div>

@@ -6,12 +6,14 @@ modifier: Riz
 summary: 
 caption: 
 type: 
-
+Order: 1
 
 Hello There,
 
-Welcome to T-blogs project. T-blogs helps you create traditional blogs using Tiddlywiki 5. 
+Welcome to T-blogs project. T-blogs helps you create traditional blogs with disqus comments integration using Tiddlywiki 5. 
 
 It is based on the Node JS version of TW5. Despite that you do not need programming skills to make use of the platform. Essentially it means you can open your favorite text editor, write your blog post and publish it as HTML - without so much as opening your browser even once. 
+
+This documentation webpage itself is created using TW5 based on <a href="https://stripe.com/docs/checkout/tutorial" rel="nofollow">Stripes.js documentation</a>. Apparently eating your own dog food is a thing, who knew!.
 
 A sublime text based workflow is given to help the beginners to TW5 platform.

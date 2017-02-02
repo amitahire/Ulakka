@@ -1,0 +1,77 @@
+title: Installing TiddlyWiki on Node.js 
+tags: Installation
+created: 20170202144028001
+modified: 20170202144029001
+modifier: Riz
+summary: 
+caption: 
+type: 
+order: 1
+
+
+This is the relevant documentation regarding installing tiddlywiki on Node JS from [ext[Tiddlywiki.com|http://tiddlywiki.com/#Installing%20TiddlyWiki%20on%20Node.js]]
+
+# Install [[Node.js]]
+#* either from your favourite package manager: typically `apt-get install nodejs` on Debian/Ubuntu Linux or Termux for Android, or `brew install node` on a Mac
+#* or directly from http://nodejs.org
+# Open a command line terminal and type:
+#> <div class="code">
+  	<nav class="nav-filename icon-terminal">
+    	Terminal
+  	</nav>
+  	<pre class="numbered language-curl"> <code class="language-curl"> <span class="token parameter">npm install</span><span class="token option">   -g</span> <span class="token url">tiddlywiki</span></code><span class="line-numbers"></span></pre>
+   </div>
+#> If it fails with an error you may need to re-run the command as an administrator:
+#> <div class="code">
+  	<nav class="nav-filename icon-terminal">
+    	Terminal
+  	</nav>
+  	<pre class="numbered language-curl"> <code class="language-curl"> <span class="token parameter">sudo npm install</span><span class="token option">   -g</span> <span class="token url">tiddlywiki</span></code><span class="line-numbers"></span></pre>
+   </div> (Mac/Linux)
+# Check TiddlyWiki is installed by typing:
+#> <div class="code">
+  	<nav class="nav-filename icon-terminal">
+    	Terminal
+  	</nav>
+  	<pre class="numbered language-curl"> <code class="language-curl"> <span class="token parameter">tiddlywiki</span>   -<span class="token option">-version</span></code><span class="line-numbers"></span></pre>
+   </div>
+# In response, you should see TiddlyWiki report its current version (eg "<<version>>"; you may also see other debugging information reported)
+# Try it out:
+## <div class="code">
+  	<nav class="nav-filename icon-terminal">
+    	Terminal
+  	</nav>
+  	<pre class="numbered language-curl"> <code class="language-curl"> <span class="token parameter">tiddlywiki mynewwiki</span>   -<span class="token option">-init</span> <span class="token url">server</span></code><span class="line-numbers"></span></pre>
+   </div> to create a folder for a new wiki that includes server-related components
+## <div class="code">
+  	<nav class="nav-filename icon-terminal">
+    	Terminal
+  	</nav>
+  	<pre class="numbered language-curl"> <code class="language-curl"> <span class="token parameter">tiddlywiki mynewwiki</span>   -<span class="token option">-server</span></code><span class="line-numbers"></span></pre>
+   </div> to start TiddlyWiki
+## Visit http://127.0.0.1:8080/ in your browser
+## Try editing and creating tiddlers
+# Optionally, make an offline copy:
+#* click the {{$:/core/images/save-button}} ''save changes'' button in the sidebar, ''OR''
+#* Open a new terminal instance and type 
+<div class="code">
+  	<nav class="nav-filename icon-terminal">
+    	Terminal
+  	</nav>
+  	<pre class="numbered language-curl"> <code class="language-curl"> <span class="token parameter">tiddlywiki</span>    -<span class="token option">-build</span> <span class="token url">index</span></code><span class="line-numbers"></span></pre>
+   </div>
+# When you are done, you can stop the tiddlywiki server with ''Ctrl+C''.
+
+
+The `-g` flag causes TiddlyWiki to be installed globally. Without it, TiddlyWiki will only be available in the directory where you installed it.
+
+If you are using Debian or Debian-based Linux and you are receiving a `node: command not found` error though node.js package is installed, you may need to create a symbolic link between `nodejs` and `node`. Consult your distro's manual and `whereis` to correctly create a link. See github [[issue 1434|http://github.com/Jermolene/TiddlyWiki5/issues/1434]]
+
+Example Debian v8.0: 
+<div class="code">
+  	<nav class="nav-filename icon-terminal">
+    	Terminal
+  	</nav>
+  	<pre class="numbered language-curl"> <code class="language-curl"> <span class="token parameter">sudo ln</span><span class="token option">   -s</span><span class="token url">/usr/bin/nodejs /usr/bin/node</span></code><span class="line-numbers"></span></pre>
+   </div>
+

@@ -1,0 +1,25 @@
+title: Downloading the theme	
+tags: Installation
+created: 20170202163324001
+modified: 20170202163329001
+modifier: Riz
+summary: 
+caption: 
+type: 	
+order: 2
+
+# Go to [ext[the project page|https://github.com/ibnishak/t-blog]] and <span data-balloon-length="large" data-balloon="Click the ''Clone or Download'' button in top-right of the page." data-balloon-pos="up" style="text-decoration:underline">clone/download the repo</span>. Once downloaded, unzip it into a location of your choice. The following steps assume that you have downloaded it into your home folder.
+
+<aside class="note">
+  <h3 id="activating-payment-methods">Creating a shortcut.<a class="anchor" href="#activating-payment-methods"></a></h3>
+  <p>In Debian derivatives, a method to launch the ~NodeJs server using a desktop shortcut is described <a href="https://tesseract-index.bitbucket.io/tweaks/alpha.html#Creating%20Launchers%20for%20NodeJs%20in%20Debian%20derivatives:[[Creating%20Launchers%20for%20NodeJs%20in%20Debian%20derivatives]]%20[[More%20Plans]]">here</a>.</p>
+</aside>
+
+* Serve one of the themes to localhost. In terminal, type for eg; `tiddlywiki t-blog/Attila --server` and go to http://127.0.0.1:8080
+
+
+* Fill out the gettingStarted2.0 form. Ensure that you have the home url filled out as ''http://myblog.com'' and not ''http://myblog.com/'' - ie, do not put the forward slash in the end.
+
+
+* Done!!  Let us [ext[start blogging|First%20blog%20post.html]]
+

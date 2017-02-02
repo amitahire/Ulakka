@@ -1,0 +1,17 @@
+title: Using TiddlyWiki 
+tags: [[First blog post]]
+created: 20170202172910001
+modified: 20170202172911001
+modifier: Riz
+summary: 
+caption: 
+type: 
+order: 1
+
+<i>Specific instructions for the particular theme you are using will be found inside the folder. Outlined here is the common minimum steps you need to create a blog post.</i>
+
+* Create a new tiddler. Give it a title, add some text. ''Set the `type` field to `blog/blog-post`''. It is highly recommended that you add some tags and create a field named ''summary'' in your blog-posts. 
+
+* Open a new terminal window, and type -for eg: `tiddlywiki t-blog/Attila --build`
+
+* Done!! Open the file index.html inside t-blog/Attila/blog and ensure that your blog post is appearing in the index page, and clicking on the title will take you to post page.

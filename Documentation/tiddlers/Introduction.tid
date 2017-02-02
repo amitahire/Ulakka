@@ -1,0 +1,61 @@
+title: Introduction 
+tags: [[Hello There]]
+created: 20170202102131001
+modified: 20170202102133001
+modifier: Riz
+summary: 
+caption: 
+type: 
+
+
+TW5 is an excellent static webpage creater. However, almost everyone using the platform uses it as TW5 itself. While this might be easier and more flexible for day to day uses, for a blog we need to branch out to the static webpage format. The reasons are three
+
+* It is easier to theme a html from scratch than TW5. TW5 already has built in themes and elements. You need to ensure that in addition to making everything presentable, the customisations are not preventing access to the important parts of TW5. If a person is already familiar with the TW5 interface, adapting to a radically different theme could be difficult too. I assume this is the reason why most of the interface-customisation attempts has been limited to color-palettes or adding a few menubars. 
+
+* The search engine optimisations. To run a blog, much of array of the TW5 parts is unnecessary. It would be unfair to ask the viewer to load all these on top of the blog page, depending on the fanciness of your blog might itself be quite heavy. 
+
+* Plain HTML means people do not require uber-deep knowledge of TW5 platform to use it.
+
+* Comments. A nice blog demands user engagement.  The attempts to successfully introduce commenting by a visitor to TW5 has been going on for quite some time now. The best stuff achieved so far depends on google forms and google sheets, which has its own shortcomings. Disqus comments has been enabled in all the themes under the project. 
+
+
+However the known attempts to tap into such a property of TW5 has been far and few. Jeremy has a blog edition with a few bash scripts in the main site, which is the inspiration for this attempt.
+
+As of 2nd February 2017, there are 5 blog themes available as a part of this project. Arranged from the most minimalistic ones to other end, they are
+
+
+<table class="alternate">
+    <thead>
+      <tr>
+        <th>Theme</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="card-number">Attila</td>
+        <td>adapted from <a href="https://www.quemalabs.com/theme/reyl-lite/" target="_blank">Attila Theme for ghost platform</a></td>
+      </tr>
+      <tr>
+        <td class="card-number">Reyl Lite</td>
+        <td>adapted from <a href="https://www.quemalabs.com/theme/reyl-lite/">Reyl Lite Theme for Wordpress platform</a></td>
+      </tr>
+       <tr>
+        <td class="card-number">Astrid</td>
+        <td>adapted from <a href="https://athemes.com/theme/astrid/">Astrid theme for Wordpress platform</a></td>
+      </tr>
+      <tr>
+        <td class="card-number">Illdy</td>
+        <td>adapted from <a href="https://colorlib.com/illdy/">Illdy Theme for Wordpress platform</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="card-number">Minion</td>
+        <td>adapted from <a href="http://demo.designwall.com/dw-minion/" target="_blank">Minion Theme for Wordpress platform</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+<aside class="important">
+    <p>All of these themes are freely available for the respective platforms. Nevertheless, the ownership of these theme completely belong to the original creators. Adapting them for TW5 is in no way intended to hurt the financial prospects of these in anyway and will be removed if any of them requests so.</p>
+  </aside>

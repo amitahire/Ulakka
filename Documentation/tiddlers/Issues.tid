@@ -1,0 +1,16 @@
+title: Issues 
+tags: TableOfContents
+created: 20170202185628001
+modified: 20170202185628001
+modifier: Riz
+summary: 
+caption: 
+type: 
+order: 80
+
+
+There are two things you need to notice.
+
+# In order to avoid rendering all the blog-posts over and over again, I have set the limit to render only the last 10 modified blog-posts. This means you have to give a build command atleast once every 10 blog-posts, if you are not doing it after every blog-post that is. 
+
+# The build command has a "noclean" attribute in the tiddlywiki.info file. This is to avoid deletion of old blog posts when you build new ones. However, this has an unintended side effect. If you happen to change the title of one of your blog-posts, your post will get rendered correctly again - but the old html file will not be deleted. So if you want to re-title your blog-posts, you can do it without a hitch, but you will have to file oldname.html and delete it manually. 

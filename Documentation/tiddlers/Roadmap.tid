@@ -1,0 +1,26 @@
+title: Roadmap 
+tags: TableOfContents
+created: 20170202185538001
+modified: 20170202185538001
+modifier: Riz
+summary: 
+caption: 
+type: 
+order: 70
+
+Depending on the level of interest by the community, I may or may not work towards the following goals.
+
+"""
+[ ] Category Indexes. 
+[ ] Search Functionality
+[ ] Grunt integration.		 
+[ ] Epub creation pipeline. An outline could be: TW5 > Static Pages > Pandoc > Epub. 
+[ ] Admin panel
+[ ] SEO
+[ ] More themes. 
+
+
+
+
+
+

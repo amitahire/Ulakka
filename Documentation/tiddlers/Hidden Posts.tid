@@ -1,0 +1,13 @@
+title: Hidden Posts 
+tags: TableOfContents
+created: 20170202193334001
+modified: 20170202193334001
+modifier: Riz
+summary: 
+caption: 
+type: blog/blog-post
+order: 41
+
+As you might have noticed, there is a blog/misc tiddler type. When you mark a tiddler as blog/misc, it will get rendered in the same way as a blog post. The only difference is, it will not appear in your index page. You can use this type to create speacial pages like "About the author" or "Contact me" and link them from the sidebar or footer.
+
+

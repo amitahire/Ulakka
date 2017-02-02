@@ -1,8 +1,6 @@
 
 Documentation:
-  [ ] When you specify home url, remember to avoid the forward slash(/) at the end.
-  [ ] You can put anything in header, for eg: a contact or mail to.
-  [ ] blog-header fields
+  [ ] blog-header fields in ST3.  -Plugins needed: Stringify, SNippet, Keyboad bindings, Date
   [ ] ST3 url encoding and move? 
   [ ] Url encoding button
   [ ] srcset field
@@ -11,7 +9,6 @@ Documentation:
   [ ] Once the -setfield command is usable. 
   [ ] ? Grunt file anyone?
   [ ] ?Sublime build system
-  [ ] You can delete all demo tiddlers. Also all the images in blog/images
   [ ] Button to double url encode -make sure it is in all and document it.
   [ ] Make sure everyone has url encoding button.
   [ ] Prettifying doesn't work after TW5 sets in
@@ -24,7 +21,7 @@ Documentation:
   [ ] User suggestion for meta tags
   [ ] Fontawesome -ask? or keep quiet?
   [ ] Create shortcuts to index.html
-  [ ] Need for a incrementation fn
+
 Astrid Documentation:
   [ ] logo footer
 Ildy:
@@ -49,17 +46,9 @@ Reyl Lite:
 
   
 Future:
-  [ ] Epub chain.
-        [ ] Build Static HTML files. Use pandoc to convert them to Epub. 
   [ ] Grunt integration.
         [ ] Get grunt to build the TW5, Minify the CSS, Concat the JS, Optimise our Images, CSS Lint, HTML validate, JS Hint, Live reload and push to github. 
-  [ ] Search Functionality. 
   [ ] Carousal Macro
-  [ ] htaccess and custom 404
-  [ ] Include these as Roadmaps in documenetatio  
-  [ ] There should be an advanced function to create index based on tags. - A category index. 
-  [ ] Do an admin panel
-  [ ] Picking your mind  - Social Icons would you rather share?
   [ ] http://demo.athemes.com/rocked/2015/03/10/just-a-simple-post/
   [ ] http://demos.bavotasan.com/arcade/blog/
   [ ] http://testbase.info/c/theme/wp/ascent/
@@ -81,6 +70,17 @@ TW5 issues:
 
 ＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ [x] You can delete all demo tiddlers. Also all the images in blog/images @done (17-02-02 20:32) @project(Documentation)
+ [x] htaccess and custom 404 @done (17-02-02 20:03) @project(Future)
+ [x] Picking your mind  - Social Icons would you rather share? @done (17-02-02 20:03) @project(Future)
+ [x] There should be an advanced function to create index based on tags. - A category index. @done (17-02-02 20:02) @project(Future)
+ [x] Do an admin panel @done (17-02-02 20:02) @project(Future)
+ [x] Build Static HTML files. Use pandoc to convert them to Epub. @done (17-02-02 20:01) @project(Future)
+ [x] Search Functionality. @done (17-02-02 20:00) @project(Future)
+ [x] Include these as Roadmaps in documenetatio @done (17-02-02 20:00) @project(Future)  
+ [x] Epub chain. @done (17-02-02 20:00) @project(Future)
+ [x] You can put anything in header, for eg: a contact or mail to. @done (17-02-02 19:30) @project(Documentation)
+ [x] When you specify home url, remember to avoid the forward slash(/) at the end. @done (17-02-02 19:18) @project(Documentation)
  [x] What is rel canonical @done (17-02-01 14:47) @project(Attila)
  [x] Link to older posts @done (17-02-01 14:47) @project(Attila)
  [x] Archives froms sidebar @done (17-02-01 12:23) @project(Attila)
