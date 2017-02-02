@@ -3,26 +3,52 @@ creator: Riz
 modified: 20170122153539036
 modifier: Riz
 tags: 
-title: IndexTemplate
+title: indexTemplate
 type: text/vnd.tiddlywiki
 
 `<!DOCTYPE html>
-<html>
+<html prefix="og: http://ogp.me/ns#" lang="en-US">
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <meta name="generator" content="TiddlyWiki" />
-    <meta name="tiddlywiki-version" content="`{{$:/core/templates/version}}`" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="mobile-web-app-capable" content="yes"/>
-    <meta name="format-detection" content="telephone=no"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>`{{$:/SiteTitle}}`</title>
-    <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
+    <meta name="author" content="`{{$:/status/UserName}}`">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="description" content="`{{$:/SiteSubtitle}}`">
+    <meta name="generator" content="TW5">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="canonical" href="`{{$:/Home}}`"> 
+    `<$list filter="[tag[$:/RawMarkup/T-blog]]">`
+        `<$view format='text'/>`
+    `</$list>`
+
+    <!-- OG: Index -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="`{{$:/SiteTitle}}`">
+    <meta property="og:description" content="`{{$:/SiteSubtitle}}`">
+    <meta property="og:url" content="`{{$:/Home}}`" />
+
+    <!-- Twitter:Index -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="`{{$:/SiteTitle}}`">
+    <meta name="twitter:description" content="`{{$:/Subtitle}}`">
+    <meta name="twitter:url" content="`{{$:/Home}}`">
+
+    <!-- Schema.org markup for Google+ :Index -->
+    <meta itemprop="name" content="`{{$:/SiteTitle}}`">
+    <meta itemprop="description" content="`{{$:/SiteSubtitle}}`">
+  
+
+
+
     <link rel="stylesheet" id="reyl_lite_bootstrap-css" href="stylesheets/bootstrap.css" type="text/css" media="all">
     <link rel="stylesheet" id="reyl_lite_style-css" href="stylesheets/style.css" type="text/css" media="all">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-     
+
 
     <style type="text/css">
         :root #header + #content > #left > #rlblock_left { display: none !important; }
@@ -61,7 +87,59 @@ type: text/vnd.tiddlywiki
             </div><!-- row-->
         </div><!-- /container --></header>
 
-    `<$view tiddler="indexbody" format="htmlwikified"/>`
+    <div class="blog">
+    <div id="container" class="container">
+        <div class="row">
+            <main id="main" class="site-main col-md-6 col-md-offset-3" role="main">                         
+                `<$list filter="[!has[draft.of]type[blog/blog-post]!sort[modified]limit[10]]">`
+                    <article  class="post type-post status-publish format-standard has-post-thumbnail hentry category-web-design tag-audi-2 tag-italy tag-red">
+                            <div class="post-content">
+                                <header class="entry-header">
+                                    <div class="metadata">
+                                        <ul>
+                                            <li class="meta_date">
+                                                <time class="entry-date published">
+                                                    `<$view field="created" format="date" template="DDth MMM, YYYY"/>`
+                                                </time>
+                                                <time class="updated"> 
+                                                    `<$view field="modified" format="date" template="DDth MMM, YYYY"/>`
+                                                </time>
+                                                </li>
+                                            `<$list filter="[all[current]tags[]sort[title]]">`
+                                            <li class="meta_categories">
+                                                <span class="cat-links"><a href="#" rel="category tag">`<<currentTiddler>>`</a></span>
+                                            </li>
+                                           `</$list>`
+                                            <li class="meta_comments">
+                                                <span class="comments-link"><a href="#">`<$view field="modifier"/>`</a></span>
+                                            </li>
+                                        </ul>                   
+                                        <div class="clearfix"></div>
+                                    </div><!-- /metadata -->
+                                    <h2 class="post-title"><a target="_blank" href="`<$view field='title' format='doubleurlencoded'/>`" rel="bookmark">`<$view field="title"/>`</a></h2>     </header><!-- .entry-header -->
+                                    <div class="entry-content">
+                                        <p>`<$view field="summary" format='htmlwikified'/>` <br>
+                                            <a target="_blank" href="`<$view field='title' format='doubleurlencoded'>`" class="more-link read-more">Read more <i class="fa"></i></a>
+                                        </p>
+
+                                    </div><!-- .entry-content -->
+                                <div class="clearfix"></div>
+
+                            </div><!-- /post_content -->
+                        </article><!-- #post-## -->
+               
+                `</$list>`
+                
+                    
+                
+            <div class="clearfix"></div><!-- /pagination_wrap -->           
+            </main><!-- #main -->
+            <div class="clearfix"></div>
+        </div><!-- /row -->
+                
+    </div>
+</div>
+
 
     <div class="sub-footer">
                 <div class="container">

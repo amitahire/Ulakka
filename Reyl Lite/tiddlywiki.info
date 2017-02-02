@@ -11,25 +11,51 @@
     ],
     "build": {
         "index": [
+            "--output",
+            "./blog",
             "--rendertiddler",
-            "IndexTemplate",
+            "indexTemplate",
             "index.html",
+            "text/plain",
+            "--rendertiddler",
+            "indexTemplate2",
+            "index2.html",
+            "text/plain",
+            "--rendertiddler",
+            "indexTemplate3",
+            "index3.html",
+            "text/plain"
+        ],
+        "archive": [
+            "--output",
+            "./blog",
+            "--rendertiddler",
+            "archiveTemplate",
+            "archives.html",
             "text/plain"
         ],
         "posts": [
+            "--output",
+            "./blog",
             "--rendertiddlers",
-            "[!is[system]status[post]]",
+            "[type[blog/blog-post]!sort[modified]limit[10]]",
             "postTemplate",
-            "./posts/",
+            "./",
             "text/plain",
             ".html",
             "noclean"
         ],
-        "archives": [
-            "--rendertiddler",
-            "archives",
-            "./posts/archives.html",
-            "text/plain"
+         "misc": [
+         "--output",
+            "./blog",
+         "--rendertiddlers",
+            "[type[blog/misc]!sort[modified]limit[10]]",
+            "postTemplate",
+            "./",
+            "text/plain",
+            ".html",
+            "noclean"
+            
         ]
     }
 }

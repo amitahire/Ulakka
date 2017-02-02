@@ -13,27 +13,67 @@ caption: Do not load
 
 
 <head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="generator" content="TiddlyWiki" />
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-	<meta name="mobile-web-app-capable" content="yes"/>
-	<meta name="format-detection" content="telephone=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>`{{!!title}}`</title>
+    <meta name="author" content="`{{!!modifier}}`">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="description" content="`{{!!summary}}`">
+    <meta name="generator" content="TW5">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="canonical" href="`{{$:/Home}}`"> 
+    `<$list filter="[tag[$:/RawMarkup/T-blog]]">`
+        `<$view format='text'/>`
+    `</$list>`
 
 
-		<!-- Head -->
-		<title>`<$view field="title"/>`</title>				
-		<link rel="stylesheet" id="reyl_lite_bootstrap-css" href="../stylesheets/bootstrap.css" type="text/css" media="all">
-	<link rel="stylesheet" id="reyl_lite_style-css" href="../stylesheets/style.css" type="text/css" media="all">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- OG: Posts -->
+	<meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="`{{$:/SiteTitle}}`">
+    <meta property="og:title" content="`{{!!title}}`">
+    <meta property="og:description" content="`{{!!summary}}`">
+    <meta property="og:image" content="`{{!!imgsrc}}`"/>
+    <meta property="og:url" content="`{{$:/Home}}`/`<$view field='title' format='doubleurlencoded'/>.html`" />
+    <meta property="article:published_time" content="`<$view field='created' format='date' template='DDth MMM, YYYY'/>`"/>
+    <meta property="article:modified_time" content="`<$view field='modified' format='date' template='DDth MMM, YYYY'/>`"/>
+    <meta property="article:tag" content="`{{!!tags}}`"/>
+    <meta property="article:tag" content="`{{!!modifier}}`"/>
+
+
+
+	<!-- Twitter:Posts -->
+	<meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="`{{!!title}}`">
+    <meta name="twitter:description" content="`{{!!summary}}`">
+    <meta name="twitter:image" content="`{{!!imgsrc}}`"> 
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="`{{!!modifier}}`">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="`{{!!tags}}`">
+    <meta name="twitter:url" content="`{{$:/Home}}`/`<$view field='title' format='doubleurlencoded'/>.html`">
+
+
+
+	<!-- Schema.org markup for Google+ :Posts -->
+ 	<meta itemprop="name" content="`{{!!title}}`">
+	<meta itemprop="description" content="`{{!!summary}}`">		
+	
+
+
+	<link rel="stylesheet" id="reyl_lite_bootstrap-css" href="stylesheets/bootstrap.css" type="text/css" media="all">
+	<link rel="stylesheet" id="reyl_lite_style-css" href="stylesheets/style.css" type="text/css" media="all">
 	<link id="faviconLink" rel="shortcut icon" href="favicon.ico">
 	<style type="text/css">
 		:root #header + #content > #left > #rlblock_left { display: none !important; }
 	</style>
 
-	<script type="text/javascript" src="../js/modernizr.custom.67069.js"></script>
-	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.67069.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
 	<script>try {  for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){    var lastpass_f = document.forms[lastpass_iter];    if(typeof(lastpass_f.lpsubmitorig)=="undefined"){      if (typeof(lastpass_f.submit) == "function") {        lastpass_f.lpsubmitorig = lastpass_f.submit;        lastpass_f.submit = function(){          var form = this;          try {            if (document.documentElement && 'createEvent' in document)            {              var forms = document.getElementsByTagName('form');              for (var i=0 ; i<forms.length ; ++i)                if (forms[i]==form)                {                  var element = document.createElement('lpformsubmitdataelement');                  element.setAttribute('formnum',i);                  element.setAttribute('from','submithook');                  document.documentElement.appendChild(element);                  var evt = document.createEvent('Events');                  evt.initEvent('lpformsubmit',true,false);                  element.dispatchEvent(evt);                  break;                }            }          } catch (e) {}          try {            form.lpsubmitorig();          } catch (e) {}        }      }    }  }} catch (e) {}</script>
 	</head>
 
@@ -50,7 +90,7 @@ caption: Do not load
 	        	<div class="row">
 
 	        		<div class="logo_container col-md-5">
-	                        <p class="site-title"><a href="../index.html" rel="home" class="ql_logo">`{{$:/SiteTitle}}`</a></p>
+	                        <p class="site-title"><a href="index.html" rel="home" class="ql_logo">`{{$:/SiteTitle}}`</a></p>
 						    <p class="site-description">`{{$:/SiteSubtitle}}`</p>
 	                </div><!-- /logo_container -->
 
@@ -65,7 +105,7 @@ caption: Do not load
 	                            <div class="menu-navigation-container">
 	                            	<ul id="primary-menu" class="nav">
 	                            		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4375">
-	                            			<a title="Home" href="../index.html">Home</a></li>
+	                            			<a title="Home" href="index.html">Home</a></li>
 										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4374">
 											<a title="About" href="About.html">About</a></li>
 										<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4376">
@@ -183,10 +223,10 @@ caption: Do not load
 	</script>
 	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">contents powered by Disqus.</a></noscript>
 
-	<script type="text/javascript" src="../js/html5shiv.js"></script>
-	<script type="text/javascript" src="../js/pace.js"></script>
-	<script type="text/javascript" src="../js/bootstrap.js"></script>
-	<script type="text/javascript" src="../js/script.js"></script>
+	<script type="text/javascript" src="js/html5shiv.js"></script>
+	<script type="text/javascript" src="js/pace.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 
 </body>
 

@@ -10,34 +10,47 @@ type: text/vnd.tiddlywiki
 `<!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
     <title>`{{$:/SiteTitle}}`</title>
-    <meta name="description" content="`{{$:/SiteSubtitle}}`">
-
+    <meta name="author" content="`{{$:/status/UserName}}`">
     <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-    <link rel="canonical" href="`{{$:/Home}}`">
+    <meta name="description" content="`{{$:/SiteSubtitle}}`">
+    <meta name="generator" content="TW5">
     <meta name="referrer" content="no-referrer-when-downgrade">
-    
-    <meta property="og:site_name" content="`{{$:/SiteTitle}}`">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="canonical" href="`{{$:/Home}}`"> 
+    `<$list filter="[tag[$:/RawMarkup/T-blog]]">`
+        `<$view format='text'/>`
+    `</$list>`
+
+<!-- OG: Index -->
+    <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
     <meta property="og:title" content="`{{$:/SiteTitle}}`">
-    <meta property="og:description" content="T-blog Theme">
+    <meta property="og:description" content="`{{$:/SiteSubtitle}}`">
+    <meta property="og:url" content="`{{$:/Home}}`" />
+
+<!-- Twitter:Index -->
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="`{{$:/SiteTitle}}`">
-    <meta name="twitter:description" content="T-blog Theme">
-    
+    <meta name="twitter:description" content="`{{$:/Subtitle}}`">
+    <meta name="twitter:url" content="`{{$:/Home}}`">
+
+ <!-- Schema.org markup for Google+ :Index -->
+    <meta itemprop="name" content="`{{$:/SiteTitle}}`">
+    <meta itemprop="description" content="`{{$:/SiteSubtitle}}`">
+
+
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css"> 
     <script type="text/javascript" defer="defer" async="" src="js/piwik.js"></script>
-
-
-    <meta name="generator" content="TW5">
     <meta name="robots" content="noindex,nofollow">
-    <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+    <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style>
+</head>
 
 <body class="home-template">
     

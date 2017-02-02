@@ -15,6 +15,16 @@ Documentation:
   [ ] Button to double url encode -make sure it is in all and document it.
   [ ] Make sure everyone has url encoding button.
   [ ] Prettifying doesn't work after TW5 sets in
+  [ ] Can we transclude inside a quote?
+  [ ] Og:image -Img source
+  [ ] Special Classes = imgsrc, summary, t-class
+  [ ] favicon
+  [ ] $:/RawMarkup/T-blog
+  [ ] Illdy Pagination Pending
+  [ ] User suggestion for meta tags
+  [ ] Fontawesome -ask? or keep quiet?
+  [ ] Create shortcuts to index.html
+  [ ] Need for a incrementation fn
 Astrid Documentation:
   [ ] logo footer
 Ildy:
@@ -27,12 +37,15 @@ Astrid:
   [ ] Archive Template
   [ ] New tiddler should have imgsrc field
 Attila:
-  [ ] What is rel canonical
-  [ ] background image of post
-  [x] Archives froms sidebar @done (17-02-01 12:23)
-  [ ] Link to older posts
-  [x] index2 and index 3 @done (17-02-01 11:45)
-  [x] Stylesheets folder @done (17-02-01 11:41)
+  [ ] background image of post - Document
+  [ ] UserImage
+
+
+
+
+Reyl Lite:
+  [ ] HeaderNav
+  [ ] Spacing between postst
 
   
 Future:
@@ -42,12 +55,11 @@ Future:
         [ ] Get grunt to build the TW5, Minify the CSS, Concat the JS, Optimise our Images, CSS Lint, HTML validate, JS Hint, Live reload and push to github. 
   [ ] Search Functionality. 
   [ ] Carousal Macro
-  [ ] Include these as Roadmaps in documenetation
-  
+  [ ] htaccess and custom 404
+  [ ] Include these as Roadmaps in documenetatio  
   [ ] There should be an advanced function to create index based on tags. - A category index. 
   [ ] Do an admin panel
   [ ] Picking your mind  - Social Icons would you rather share?
-  [x] http://demo.designwlal.com/dw-minion/ @done (17-01-31 18:39)
   [ ] http://demo.athemes.com/rocked/2015/03/10/just-a-simple-post/
   [ ] http://demos.bavotasan.com/arcade/blog/
   [ ] http://testbase.info/c/theme/wp/ascent/
@@ -64,12 +76,17 @@ TW5 issues:
   Proposals:
     [ ] Keyboard navigation to tiddlers
     [ ] increment the numbers
-    [ ] 
 
 
 
 ＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ [x] What is rel canonical @done (17-02-01 14:47) @project(Attila)
+ [x] Link to older posts @done (17-02-01 14:47) @project(Attila)
+ [x] Archives froms sidebar @done (17-02-01 12:23) @project(Attila)
+ [x] index2 and index 3 @done (17-02-01 11:45) @project(Attila)
+ [x] Stylesheets folder @done (17-02-01 11:41) @project(Attila)
+ [x] http://demo.designwlal.com/dw-minion/ @done (17-01-31 18:39) @project(Future)
  [x] archiveTemplate @done (17-01-31 18:39) @project(Minions)
  [x] Nav before and after in index @done (17-01-31 17:49) @project(Minions)
  [x] Few more index pages @done (17-01-31 17:49) @project(Minions)

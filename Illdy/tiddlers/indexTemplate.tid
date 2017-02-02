@@ -11,68 +11,50 @@ type: text/vnd.tiddlywiki
 <html prefix="og: http://ogp.me/ns#" lang="en-US">
 
 <head>
-    <title>`{{$:/SiteTitle}}`</title>
+    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>`{{$:/SiteTitle}}`</title>
+    <meta name="author" content="`{{$:/status/UserName}}`">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="description" content="`{{$:/SiteSubtitle}}`">
+    <meta name="generator" content="TW5">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="canonical" href="`{{$:/Home}}`"> 
+    `<$list filter="[tag[$:/RawMarkup/T-blog]]">`
+        `<$view format='text'/>`
+    `</$list>`
 
-    <!-- This site is optimized with the Yoast SEO plugin v4.1 - https://yoast.com/wordpress/plugins/seo/ -->
-    
+    <!-- OG: Index -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Blog - Illdy Theme Demo">
-    <meta property="og:description" content="Illdy One Page WordPress theme is fully SEO friendly and is ready to help you to achieve the highest rankings on search engines.">
-    <meta property="og:site_name" content="Illdy Theme Demo">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:description" content="Illdy One Page WordPress theme is fully SEO friendly and is ready to help you to achieve the highest rankings on search engines.">
-    <meta name="twitter:title" content="Blog - Illdy Theme Demo">
+    <meta property="og:title" content="`{{$:/SiteTitle}}`">
+    <meta property="og:description" content="`{{$:/SiteSubtitle}}`">
+    <meta property="og:url" content="`{{$:/Home}}`" />
+
+    <!-- Twitter:Index -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="`{{$:/SiteTitle}}`">
+    <meta name="twitter:description" content="`{{$:/Subtitle}}`">
+    <meta name="twitter:url" content="`{{$:/Home}}`">
+
+    <!-- Schema.org markup for Google+ :Index -->
+    <meta itemprop="name" content="`{{$:/SiteTitle}}`">
+    <meta itemprop="description" content="`{{$:/SiteSubtitle}}`">
+    <meta property="og:image:width" content="1320">
+    <meta property="og:image:height" content="880">
+
+    
+    
     <!-- / Yoast SEO plugin. -->
 
     
     <script async="" src="js/analytics.js"></script>
-    <script type="text/javascript">
-        window._wpemojiSettings = {
-            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/",
-            "ext": ".png",
-            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/",
-            "svgExt": ".svg",
-            "source": {
-                "concatemoji": "https:\/\/colorlib.com\/illdy\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.1"
-            }
-        };
-        ! function(a, b, c) {
-            function d(a) {
-                var b, c, d, e, f = String.fromCharCode;
-                if (!k || !k.fillText) return !1;
-                switch (k.clearRect(0, 0, j.width, j.height), k.textBaseline = "top", k.font = "600 32px Arial", a) {
-                    case "flag":
-                        return k.fillText(f(55356, 56826, 55356, 56819), 0, 0), !(j.toDataURL().length < 3e3) && (k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 65039, 8205, 55356, 57096), 0, 0), b = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 55356, 57096), 0, 0), c = j.toDataURL(), b !== c);
-                    case "emoji4":
-                        return k.fillText(f(55357, 56425, 55356, 57341, 8205, 55357, 56507), 0, 0), d = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55357, 56425, 55356, 57341, 55357, 56507), 0, 0), e = j.toDataURL(), d !== e
-                }
-                return !1
-            }
-
-            function e(a) {
-                var c = b.createElement("script");
-                c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
-            }
-            var f, g, h, i, j = b.createElement("canvas"),
-                k = j.getContext && j.getContext("2d");
-            for (i = Array("flag", "emoji4"), c.supports = {
-                    everything: !0,
-                    everythingExceptFlag: !0
-                }, h = 0; h < i.length; h++) c.supports[i[h]] = d(i[h]), c.supports.everything = c.supports.everything && c.supports[i[h]], "flag" !== i[h] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[i[h]]);
-            c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function() {
-                c.DOMReady = !0
-            }, c.supports.everything || (g = function() {
-                c.readyCallback()
-            }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function() {
-                "complete" === b.readyState && c.readyCallback()
-            })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji)))
-        }(window, document, window._wpemojiSettings);
-    </script>
+    
     <script src="js/wp-emoji-release.js" type="text/javascript" defer="defer"></script>
     <style type="text/css">
         img.wp-smiley,
@@ -103,8 +85,8 @@ type: text/vnd.tiddlywiki
     <link rel="stylesheet" id="illdy-custom-css" href="stylesheets/custom.css" type="text/css" media="all">
     <link rel="stylesheet" id="illdy-style-css" href="stylesheets/style.css" type="text/css" media="all">
     <link rel="stylesheet" id="jetpack_css-css" href="stylesheets/jetpack.css" type="text/css" media="all">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- This site uses the Google Analytics by MonsterInsights plugin v5.5.3 - Universal enabled - https://www.monsterinsights.com/ -->
+     
+
     <script type="text/javascript">
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -130,18 +112,11 @@ type: text/vnd.tiddlywiki
             display: none !important;
                 }
     </style>
-    <style type="text/css">
-        img[src="https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/google-adsense-logo-506x322.png"],
-        iframe[src="https://pageview.goroost.com/pageview?rdt=null&rid=null&appKey=78c44613ebcc4e43a4c90f7e07788d5a&url=https%3A%2F%2Fcolorlib.com%2Fwp%2Fbest-personal-blog-wordpress-themes%2F&referrer=https%3A%2F%2Fwww.google.co.in%2F"] {
-            display: none !important;
-            }
-    </style>
+    
     <!-- / Google Analytics by MonsterInsights -->
     <script type="text/javascript" src="js/jquery_002.js"></script>
     <script type="text/javascript" src="js/jquery-migrate.js"></script>
     <script type="text/javascript" src="js/pace.js"></script>
-    
-    <meta name="generator" content="TW5">
     <style type="text/css">
         .pace .pace-progress {
             background-color: #f1d204;

@@ -7,7 +7,7 @@ title: indexbody
 type: text/vnd.tiddlywiki
 
 \define towardspost()
-posts/<$view field="title" format="doubleurlencoded"/>.html
+<$view field="title" format="doubleurlencoded"/>.html
 \end
 
 
@@ -15,7 +15,7 @@ posts/<$view field="title" format="doubleurlencoded"/>.html
 	<div id="container" class="container">
 	    <div class="row">
 			<main id="main" class="site-main col-md-6 col-md-offset-3" role="main">							
-				<$list filter="[status[post]!sort[modified]limit[10]]">	
+				<$list filter="[!has[draft.of]type[blog/blog-post]!sort[modified]limit[10]]">	
 					<$wikify name="postlink"  text=<<towardspost>>>
 
 

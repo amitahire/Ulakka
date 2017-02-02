@@ -1,0 +1,26 @@
+{
+    "description": "Basic client-server edition",
+    "plugins": [
+        "tiddlywiki/tiddlyweb",
+        "tiddlywiki/filesystem",
+        "tiddlywiki/highlight"
+    ],
+    "themes": [
+        "tiddlywiki/vanilla",
+        "tiddlywiki/snowwhite"
+    ],
+    "build": {
+        "index": [
+             "--output",
+            "./blog",
+            "--rendertiddlers",
+            "[!has[draft.of]tag[TableOfContents]]",
+            "indexTemplate",
+            "./",
+            "text/plain",
+            ".html",
+            "noclean"
+        ]
+
+    }
+}
