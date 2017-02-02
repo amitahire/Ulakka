@@ -1,11 +1,11 @@
 
 Documentation:
-  [ ] blog-header fields in ST3.  -Plugins needed: Stringify, SNippet, Keyboad bindings, Date
-  [ ] ST3 url encoding and move? 
+  [x] blog-header fields in ST3.  -Plugins needed: Stringify, SNippet, Keyboad bindings, Date @done (17-02-03 01:58)
+  [x] ST3 url encoding and move? @done (17-02-03 01:58)
   [ ] Url encoding button
   [ ] srcset field
   [ ] imgsrc
-  [ ] You can make the footer into an about us snippet
+  [x] You can make the footer into an about us snippet @done (17-02-03 01:28)
   [ ] Once the -setfield command is usable. 
   [ ] ? Grunt file anyone?
   [ ] ?Sublime build system

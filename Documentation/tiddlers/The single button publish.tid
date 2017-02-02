@@ -1,0 +1,15 @@
+title: Single button to publish. 
+tags: [[Sublime Text Workflow]]
+created: 20170203013027001
+modified: 20170203013028001
+modifier: Riz
+summary: 
+caption: 
+type: blog/blog-post
+order: 40	
+
+Assuming that you are planning to host the blog in github or similar git powered targets, I recommend authenticating using SSH keys  to avoid having to enter your password each time you push. 
+
+I borrowed the code from the TW5 [ext[blog edition repo here|https://github.com/Jermolene-blog/blog]] and put together a bash script that will build locally and push to the github. In the end I used the steps described here in my blog to create a launcher for the bash script. 
+
+There, now I open my ST3, expand my  snippet, type in my post, and launch my bash script from synapse - and it is out there in the world. Not bad, eh?

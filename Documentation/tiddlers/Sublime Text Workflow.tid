@@ -9,28 +9,9 @@ type:
 order: 60
 
 
-Go to Preferences>Browse Packages. Inside the User folder create a file with the extension ''.sublime-snippet'' for eg: tiddlerHeader.sublime-snippet
-<div class="code">
-  <nav class="nav-filename icon-file">
-    tiddlerHeader.sublime-snippet
-  </nav>
-  <pre class=" numbered language-html"><code class=" language-html"><span class="token property">&lt;snippet&gt;</span>
-<span class="token property">&lt;content&gt;&lt;![CDATA[</span>
-<span class="token property">title: ${TM_FILENAME/\.tid&#x2F;&#x2F;g} </span>
-<span class="token property">tags: $2</span>
-<span class="token property">created: $3</span>
-<span class="token property">modified: $4</span>
-<span class="token property">modifier: ${5:Riz}</span>
-<span class="token property">summary: $6</span>
-<span class="token property">caption: $7</span>
-<span class="token property">type: ${8:blog/blog-post}</span>
-<span class="token property"></span>
-<span class="token property">$0</span>
-<span class="token property"></span>
-<span class="token property">]]&gt;&lt;/content&gt;</span>
-<span class="token property">&lt;!-- Optional: Set a tabTrigger to define how to trigger the snippet --&gt;</span>
-<span class="token property">&lt;tabTrigger&gt;tdh&lt;/tabTrigger&gt;</span>
-<span class="token property">&lt;description&gt;Tiddler header&lt;/description&gt;</span>
-<span class="token property">&lt;!-- Optional: Set a scope to limit where the snippet will trigger --&gt;</span>
-<span class="token property">&lt;scope&gt;text.tid&lt;/scope&gt;</span>
-<span class="token property">&lt;/snippet&gt;</span></code></pre></div>
+As I mentioned in the begining, this whole rabbit hole had its begining with the thought, I wish I could open up my text editor and write my blog post, and press a button to publish it. Some ideas are like cats, they demand attention. If we don't give it to them, they will intrude our personal space, our laptops, our thoughts. Hmm, finally I decided to give it a go. Turns out, themes for blogs could be created so easily, I made 5 out of the time I used to make a single TW5 theme. I even found a decent looking documentation web and snatch its looks too for this documentation. 
+
+Enough about that. Here I am shouwing how I finally got around to achieving my initial objective using a couple of plugins for sublime text 3.
+
+The plugins I used are : Stringify and InsertDate. Install them both using Sublime text package installer.
+

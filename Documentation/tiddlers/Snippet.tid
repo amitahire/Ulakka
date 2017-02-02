@@ -1,0 +1,63 @@
+title: Snippet 
+tags: [[Sublime Text Workflow]]
+created: 20170203013027001
+modified: 20170203013028001
+modifier: Riz
+summary: 
+caption: 
+type: blog/blog-post
+order: 30
+
+Finally, go to ''Preferences > Browse Packages''. Inside the User folder create a file with the extension ''.sublime-snippet'' for eg: tiddlerHeader.sublime-snippet. Add the following code and save. 
+<div class="code">
+  <nav class="nav-filename icon-file">
+    tiddlerHeader.sublime-snippet
+  </nav>
+  <pre class=" numbered language-html"><code class=" language-html"><span class="token property">&lt;snippet&gt;</span>
+<span class="token property">&lt;content&gt;&lt;![CDATA[</span>
+<span class="token property">title: ${TM_FILENAME/\.tid&#x2F;&#x2F;g} </span>
+<span class="token property">tags: $2</span>
+<span class="token property">created: $3</span>
+<span class="token property">modified: $4</span>
+<span class="token property">modifier: ${5:Riz}</span>
+<span class="token property">summary: $6</span>
+<span class="token property">caption: $7</span>
+<span class="token property">type: ${8:blog/blog-post}</span>
+<span class="token property"></span>
+<span class="token property">$0</span>
+<span class="token property"></span>
+<span class="token property">]]&gt;&lt;/content&gt;</span>
+<span class="token property">&lt;!-- Optional: Set a tabTrigger to define how to trigger the snippet --&gt;</span>
+<span class="token property">&lt;tabTrigger&gt;tdh&lt;/tabTrigger&gt;</span>
+<span class="token property">&lt;description&gt;Tiddler header&lt;/description&gt;</span>
+<span class="token property">&lt;!-- Optional: Set a scope to limit where the snippet will trigger --&gt;</span>
+<span class="token property">&lt;scope&gt;text.tid&lt;/scope&gt;</span>
+<span class="token property">&lt;/snippet&gt;</span></code></pre></div>
+
+
+Now create a file with extension ''.tid'' in your tiddlers folder. On the first line, type ''tdh'' and press tab. If you followed the steps correctly, it would have expanded to
+
+<div class="code">
+  <nav class="nav-filename icon-file">
+    tiddlerHeader.sublime-snippet
+  </nav>
+  <pre class=" numbered language-html"><code class=" language-html"><span class="token property">title: myFileName</span>
+<span class="token property">tags: </span>
+<span class="token property">created:</span>
+<span class="token property">modified:</span>
+<span class="token property">modifier: Riz</span>
+<span class="token property">summary:</span>
+<span class="token property">caption:</span>
+<span class="token property">type: blog/blog-post</span></code></pre></div>
+
+A few points about the snippet for the uninitiated. 
+
+* You can obviously change the modifier name in the original snippet to your name
+* It will jump to the next stop on pressing tab. Once you entered the tags, press tab and it will position itself after created. Once you reach created, press F5 key - it will enter the correct date-stamp format. Same for the modified field.
+* After the last field press tab to jump to the text field leaving one blank line.
+* This snippet will only work if your file has ''.tid'' extension.
+* Also, apart from the sinppet, the above steps also maps url encoding function to your F3 key. So if you want the double url encoded title for your href attribute, you just need to select the text and press F3 twice.
+
+
+
+In the interest of full disclosure, I use AdvancedNewFile plugin for easy file creation, Emmet plugin for HTML work, and Shell Exec plugin for accessing the terminal occasionally.
