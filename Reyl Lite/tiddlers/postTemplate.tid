@@ -155,7 +155,7 @@ caption: Do not load
 				    <div class="post-content">
 
 				    	<div class="entry-content">
-
+				    			<img src="`{{!!imgsrc}}`" />
 								`<$view format="htmlwikified"/>`
 
 						</div><!-- .entry-content -->

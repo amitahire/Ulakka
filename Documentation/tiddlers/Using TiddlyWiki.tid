@@ -12,6 +12,6 @@ order: 1
 
 * Create a new tiddler. Give it a title, add some text. ''Set the `type` field to `blog/blog-post`''. It is highly recommended that you add some tags and create a field named ''summary'' in your blog-posts. 
 
-* Open a new terminal window, and type -for eg: `tiddlywiki t-blog/Attila --build`
+* Open a new terminal window, and type -for eg: `cd t-blog/Attila && tiddlywiki  --build`
 
 * Done!! Open the file index.html inside t-blog/Attila/blog and ensure that your blog post is appearing in the index page, and clicking on the title will take you to post page.

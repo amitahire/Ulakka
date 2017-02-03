@@ -31,7 +31,13 @@ Using the following steps we are creating a sidebar category named ''my category
 * Create a new tiddler. Set its title to ''my category''. Set its type to ''blog/sidebar-category''
 * Create a second tiddler. Set its title to ''Google'', text to `http://www.google.com`, and its type to `blog/sidebar-item`
 * Finally tag the ''Google'' tiddler with ''my category''
-* Build the tiddlywiki with build command. For eg: type in the terminal `tiddlywiki t-blog/Attila --build`
+* Build the tiddlywiki with build command. For eg: type in the terminal <div class="code">
+  	<nav class="nav-filename icon-terminal">
+    	Terminal
+  	</nav>
+<pre class="numbered language-curl"><code class="language-curl"><span class="token parameter">cd t-blog/Attila</span>
+<span class="token parameter">tiddlywiki</span>   -<span class="token option">-build</span></code><span class="line-numbers"></span></pre>
+   </div>
 * Check the index page of the blog.
 
 Similar steps can be followed for others like footers, tabs and header. Header Category appears in the themes rarely. In such themes you can use the Header-Nav-Item type without any Header category.

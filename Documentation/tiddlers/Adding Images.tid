@@ -1,0 +1,17 @@
+title: Adding Images 
+tags: [[A few Tips]]
+created: 20170203205845001
+modified: 20170203205848001
+modifier: Riz
+summary: 
+caption: 
+type: 
+order: 3
+
+There are three methods to add an image to blog post.
+
+* Using the html tag `<img>`
+* Using the tiddlywiki `<$image>` widget
+
+These two enables user to add images anywhere in the post. However, if you want a image appearing in the begining of a post, the recommended method is to create a field called ''imgsrc'' and place the link to image there. This method has an advantage over other two. The opengraph and twitter meta tags refer to this field. That is to say, if someone shared that particular post in facebook or twitter, the image linked from this field will be displayed alongside the title and summary. 
+

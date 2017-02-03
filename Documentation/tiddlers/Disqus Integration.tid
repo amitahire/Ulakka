@@ -8,3 +8,13 @@ caption:
 type: 
 order: 50
 
+!!!Steps
+
+* Go to [ext[disqus.com|http://disqus.com/]]. Create an account.
+* Once you login, go to https://disqus.com/admin/create/
+* Register your site. For eg: ''ibnishak.github.io''.  Copy the unique disqus identifier appearing just below the box as you type the web address.
+* Launch your TiddlyWiki. In getting started, you will have a box for disqus short url. Paste the identifier copied in previous step there. 
+* Done.
+
+You will not see disqus comments when you are offline or when you see the files in your local hard-drive. You will see them when you visit the webpage wherever they are hosted.
+

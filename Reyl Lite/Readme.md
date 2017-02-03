@@ -6,3 +6,4 @@
 ###### Pending Tasks
 
 + Index pagination
++ Category Indexes

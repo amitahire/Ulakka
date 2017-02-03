@@ -1,1 +1,0 @@
-firefox http://docs.sublimetext.info/en/latest/reference/build_systems/exec.html#exec-command-arguments

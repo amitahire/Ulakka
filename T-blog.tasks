@@ -1,20 +1,9 @@
 
+Final Check List:
+  [ ] All .infos has limit 10?
 Documentation:
-  [ ] imgsrc
-  [ ] Special fields = imgsrc, summary, t-class
-  [ ] Documentation: Under a new header tips: You can add images 3 ways =-Image widget, Img html element and imgsrc field -Imgsrc has social media advantages.
 
-Astrid Documentation:
-Ildy:
-  [ ] Disqus
-  [ ] map $:/userName to the default username tiddler
 
-Astrid:
-  [ ] map $:/userName to the default username tiddler
-  [ ] New tiddler should have imgsrc field
-Attila:
-  [ ] background image of post - Document
-  [ ] UserImage
 
 
 
@@ -46,6 +35,18 @@ TW5 issues:
 
 ＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ [x] imgsrc @done (17-02-03 21:06) @project(Documentation)
+ [x] Special fields = imgsrc, summary, t-class @done (17-02-03 21:06) @project(Documentation)
+ [x] Documentation: Under a new header tips: You can add images 3 ways =-Image widget, Img html element and imgsrc field -Imgsrc has social media advantages. @done (17-02-03 21:06) @project(Documentation)
+ [x] background image of post - Document @done (17-02-03 20:50) @project(Attila)
+ [x] UserImage @done (17-02-03 20:50) @project(Attila)
+ [x] Change userName to status/user @done (17-02-03 20:50) @project(Documentation)
+ [x] map $:/userName to the default username tiddler @done (17-02-03 20:21) @project(Ildy)
+ [x] map $:/userName to the default username tiddler @done (17-02-03 20:21) @project(Astrid)
+ [x] New tiddler should have imgsrc field @done (17-02-03 20:21) @project(Astrid)
+ [x] All usernames has been changed @done (17-02-03 20:21) @project(Final Check List)
+ [x] All getting started has disqus link? @done (17-02-03 20:21) @project(Final Check List)
+ [x] Disqus @done (17-02-03 20:12) @project(Ildy)
  [x] User suggestion for meta tags: Documentation: Under a new header tips: @done (17-02-03 12:34) @project(Documentation)
  [x] Og:image -Img source @done (17-02-03 12:34) @project(Documentation)
  [x] Favicon Documentation @done (17-02-03 12:34) @project(Documentation)
