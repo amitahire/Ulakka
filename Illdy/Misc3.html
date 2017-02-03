@@ -16,6 +16,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="canonical" href="https://tesseract-index.bitbucket.io"> 
     
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
 
     <!-- OG: Posts -->
@@ -344,12 +345,14 @@
                         </div>
                         <!--/.blog-post-entry.markup-format-->
                         <div class="blog-post-author clearfix"><img alt="" src="images/demo2.jpg" class="avatar avatar-98 photo" originals="98" scale="1.0909091234207153" width="98" height="98">
-                            <h4>Riz</h4>
+                            <h4></h4>
                             <p>Aliquam tempor dui id ex molestie, id ullamcorper ante imperdiet. Nunc eu mi eget odio rhoncus sollicitudin at nec nisi. Sed nec dapibus ex. Suspendisse vulputate augue et tellus pretium scelerisque. Pellentesque non pretium magna, id consectetur tellus. Nullam nec justo tempus, rutrum arcu eget, sodales ante. Curabitur posuere turpis at volutpat sodales.</p>
                         </div>
                         <!--/.blog-post-author.clearfix-->
                         
-                        <div id="comments"></div>
+                        <div id="comments">
+                            <div id="disqus_thread"></div>
+                        </div>
                         <!--/#comments-->
                     </article>
                     <!--/#post-11.blog-post-->
@@ -683,7 +686,27 @@
     <script type="text/javascript" src="./js/scripts_002.js"></script>
     <script type="text/javascript" src="./js/comment-reply.js"></script>
     <script type="text/javascript" src="./js/wp-embed.js"></script>
+    <!--=========================
+    =                  Disqus Plugin                              =
+    ==========================-->
 
+   <script>
+      
+        var disqus_config = function () {
+            this.page.url = "https://tesseract-index.bitbucket.io/Misc3.html";  
+            this.page.identifier = "Misc3-0";
+        };
+        
+        (function() { 
+            var d = document, s = d.createElement('script');
+            
+            s.src = '//https-ibnishak-github-io-t-blog.disqus.com/embed.js';
+            
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+</script>
+    <!--====  End of Disqus Plugin  ====-->
 </body>
 
 </html>
