@@ -16,7 +16,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="canonical" href="https://tesseract-index.bitbucket.io"> 
     
-
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
 <!-- OG: Posts -->
 	<meta property="og:locale" content="en_US">
@@ -617,6 +617,7 @@
 
                             <div id="respond" class="comment-respond">
                                 <h3 id="reply-title" class="comment-reply-title">Leave a Reply</h3>
+                                <div id="disqus_thread"></div>
                                 
                             </div>
                             <!-- #respond -->
@@ -943,6 +944,27 @@
 				    "errorBeacon": "bam.nr-data.net",
 				    "agent": ""
 				}    </script>
+	<!--=========================
+	=            Disqus Plugin            =
+	=========================-->
+
+	<script>
+	  
+	    var disqus_config = function () {
+	        this.page.url = "https://tesseract-index.bitbucket.io/Fifth%2520Long%2520Post%2520in%2520Plain%2520Text.html";  
+	        this.page.identifier = "Fifth%20Long%20Post%20in%20Plain%20Text-0";
+	    };
+	    
+	    (function() { 
+	        var d = document, s = d.createElement('script');
+	        
+	        s.src = '//https-ibnishak-github-io-t-blog.disqus.com/embed.js';
+	        
+	        s.setAttribute('data-timestamp', +new Date());
+	        (d.head || d.body).appendChild(s);
+	    })();
+	</script>
+	<!--====  End of Disqus Plugin  ====-->
 
 </body>
 
