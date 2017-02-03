@@ -16,6 +16,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="canonical" href="https://tesseract-index.bitbucket.io"> 
     
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
 
 	<!-- OG: Posts -->
@@ -49,10 +50,10 @@
 	<!-- Schema.org markup for Google+ :Posts -->
  	<meta itemprop="name" content="Miscellaneous entry with spaces in tile">
 	<meta itemprop="description" content="">
+       
 
 
 
-	
 	
 	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
     <script type="text/javascript" defer="defer" async="" src="js/piwik.js"></script>
@@ -152,9 +153,9 @@
 			</section>
 			
 
-			<section class="post-comments" style="display: none;">
+			<section class="post-comments">
 				<a id="show-disqus" class="post-comments-activate">Show Comments</a>
-			    <div id="disqus_thread"></div>
+			    	<div id="disqus_thread"></div>
 			</section>
 			
 
@@ -187,7 +188,27 @@
 	<!-- You can safely delete this line if your theme does not require jQuery -->
 <script type="text/javascript" src="js/jquery-1.js"></script>
 
+<!--=========================
+	=            Disqus Plugin            =
+=========================-->
 
+<script>
+	  
+	    var disqus_config = function () {
+	        this.page.url = "https://tesseract-index.bitbucket.io/Miscellaneous%2520entry%2520with%2520spaces%2520in%2520tile.html";  
+	        this.page.identifier = "Miscellaneous%20entry%20with%20spaces%20in%20tile-0";
+	    };
+	    
+	    (function() { 
+	        var d = document, s = d.createElement('script');
+	        
+	        s.src = '//https-ibnishak-github-io-t-blog.disqus.com/embed.js';
+	        
+	        s.setAttribute('data-timestamp', +new Date());
+	        (d.head || d.body).appendChild(s);
+	    })();
+</script>
+<!--====  End of Disqus Plugin  ====-->
 
 
 </body></html>
