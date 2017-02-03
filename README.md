@@ -1,6 +1,6 @@
 
-
-
+<br>
+<div style="margin: 0 10%;">
 # T-blog
 Creating blogs with TW5
 
