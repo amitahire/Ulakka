@@ -27,6 +27,7 @@ type:
     `<$list filter="[tag[$:/RawMarkup/T-blog]]">`
         `<$view format='text'/>`
     `</$list>`
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
 	<!-- OG: Index -->
 	<meta property="og:locale" content="en_US">
