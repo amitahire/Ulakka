@@ -1,0 +1,26 @@
+title: Meta tags 
+tags: [[A few Tips]]
+created: 20170203115936001
+modified: 20170203115937001
+modifier: Riz
+summary: 
+caption: 
+type: 
+order: 1
+
+
+The html files has been ensured to have a near comprehensive opengraph/twitter meta tags and google plus support. If you want anything to appear in the head part of the html files, create tiddlers with the content and tag them as ''`$:/tags/RawMarkup/T-blog`''
+
+For eg: 
+
+<div class="code">
+  <nav class="nav-filename icon-file">
+    myAwesomeMetaTags.tid
+  </nav>
+  <pre class=" numbered language-html"><code class=" language-html"><span class="token property">title: myAwesomeMetaTags</span>
+<span class="token property">tags: $:/tags/RawMarkup/T-blog</span>
+
+<span class="token property">&lt;meta name="twitter:creator" content="@author_handle"&gt;</span>
+<span class="token property">&lt;link rel="copyright" href="copyright.html"&gt;</span>
+<span class="token property">&lt;meta name="keywords" content="web,design,html,css,html5,development"&gt;</span>
+</code></pre></div>

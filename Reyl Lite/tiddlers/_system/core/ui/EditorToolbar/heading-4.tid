@@ -1,0 +1,17 @@
+caption: {{$:/language/Buttons/Heading4/Caption}}
+condition: [is[tiddler]<targetTiddler>]
+created: 20170129090039299
+description: {{$:/language/Buttons/Heading4/Hint}}
+icon: $:/core/images/heading-4
+modified: 20170129090550840
+shortcuts: ((heading-4))
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/heading-4
+type: text/vnd.tiddlywiki
+
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="prefix-lines"
+	character="!"
+	count="4"
+/>

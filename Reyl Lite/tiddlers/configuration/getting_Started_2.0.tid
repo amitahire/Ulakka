@@ -8,6 +8,7 @@ type: text/vnd.tiddlywiki
 
 |<$link to="$:/SiteTitle">Site Title</$link> |<$edit-text tiddler="$:/SiteTitle" default="" tag="input"/> |
 |*<$link to="$:/Home">Site Url</$link> |<$edit-text tiddler="$:/Home" default="" tag="input" placeholder="Enter your Site url here"/> |
+|<$link to="$:/disqusShortUrl">Disqus Short URL</$link> |<$edit-text tiddler="$:/disqusShortUrl" default="" tag="input" placeholder="Enter your Disqus Short URL  here"/>|
 
 
 

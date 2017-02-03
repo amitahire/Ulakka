@@ -1,0 +1,12 @@
+caption: {{$:/language/Buttons/Opacity/Caption}}
+condition: [<targetTiddler>is[image]]
+created: 20170129091336084
+description: {{$:/language/Buttons/Opacity/Hint}}
+dropdown: $:/core/ui/EditorToolbar/opacity-dropdown
+icon: $:/core/images/opacity
+modified: 20170129091336084
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/opacity
+type: text/vnd.tiddlywiki
+
+<$text text={{$:/config/BitmapEditor/Opacity}}/>

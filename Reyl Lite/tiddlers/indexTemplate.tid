@@ -1,6 +1,6 @@
 created: 20170122080159371
 creator: Riz
-modified: 20170122153539036
+modified: 20170203081851001
 modifier: Riz
 tags: 
 title: indexTemplate
@@ -22,7 +22,7 @@ type: text/vnd.tiddlywiki
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="canonical" href="`{{$:/Home}}`"> 
-    `<$list filter="[tag[$:/RawMarkup/T-blog]]">`
+    `<$list filter="[tag[$:/tags/RawMarkup/T-blog]]">`
         `<$view format='text'/>`
     `</$list>`
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -73,10 +73,11 @@ type: text/vnd.tiddlywiki
                         <nav id="jqueryslidemenu" class="jqueryslidemenu navbar">
                             <div class="menu-navigation-container">
                                 <ul id="primary-menu" class="nav">
-                                    <li><a title="Home" href="index.html">Home</a></li>
-                                    <li><a target="_blank" title="About" href="./posts/About.html">About</a></li>
-                                    <li><a target="_blank" title="Contact" href="mailto:`{{$:/email}}`">Contact</a></li>
-                                    <li><a target="_blank" title="Archives" href="./posts/archives.html">Archives</a></li>
+                                    `<$list filter="[!has[draft.of]type[blog/header-nav-item]]">`
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a id="`<$view field='title' format='urlencoded'/>`" href="`{{!!text}}`">`{{!!title}}`</a>
+                                        </li>
+                                    `</$list>`
                                 </ul>
                             </div>                        
                         </nav>
@@ -117,10 +118,10 @@ type: text/vnd.tiddlywiki
                                         </ul>                   
                                         <div class="clearfix"></div>
                                     </div><!-- /metadata -->
-                                    <h2 class="post-title"><a target="_blank" href="`<$view field='title' format='doubleurlencoded'/>`" rel="bookmark">`<$view field="title"/>`</a></h2>     </header><!-- .entry-header -->
+                                    <h2 class="post-title"><a target="_blank" href="`<$view field='title' format='doubleurlencoded'/>.html`" rel="bookmark">`<$view field="title"/>`</a></h2>     </header><!-- .entry-header -->
                                     <div class="entry-content">
                                         <p>`<$view field="summary" format='htmlwikified'/>` <br>
-                                            <a target="_blank" href="`<$view field='title' format='doubleurlencoded'>`" class="more-link read-more">Read more <i class="fa"></i></a>
+                                            <a target="_blank" href="`<$view field='title' format='doubleurlencoded'/>.html`" class="more-link read-more">Read more <i class="fa"></i></a>
                                         </p>
 
                                     </div><!-- .entry-content -->
@@ -176,7 +177,8 @@ type: text/vnd.tiddlywiki
                     </div><!-- .row -->
                 </div><!-- .container --></div>
 
-        
+    
+
     <script type="text/javascript" src="./js/html5shiv.js"></script>
     <script type="text/javascript" src="./js/pace.js"></script>
     <script type="text/javascript" src="./js/bootstrap.js"></script>

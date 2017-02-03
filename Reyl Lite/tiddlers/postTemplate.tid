@@ -26,7 +26,7 @@ caption: Do not load
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="canonical" href="`{{$:/Home}}`"> 
-    `<$list filter="[tag[$:/RawMarkup/T-blog]]">`
+    `<$list filter="[tag[$:/tags/RawMarkup/T-blog]]">`
         `<$view format='text'/>`
     `</$list>`
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -209,14 +209,14 @@ caption: Do not load
 	<script>
 	  
 	    var disqus_config = function () {
-	        this.page.url = "`{{$:/Home}}/{{!!title}}.html`";  
-	        this.page.identifier = "`{{!!title}}`";
+	        this.page.url = "`{{$:/Home}}/<$view field='title' format='doubleurlencoded'/>.html`";  
+	        this.page.identifier = "`<$view field='title' format='urlencoded'/><<qualify>>`";
 	    };
 	    
 	    (function() { 
 	        var d = document, s = d.createElement('script');
 	        
-	        s.src = '//https-ibnishak-github-io-t-blog.disqus.com/embed.js';
+	        s.src = '//`{{$:/disqusShortUrl}}`/embed.js';
 	        
 	        s.setAttribute('data-timestamp', +new Date());
 	        (d.head || d.body).appendChild(s);

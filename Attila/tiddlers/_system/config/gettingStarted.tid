@@ -13,6 +13,7 @@ type: text/vnd.tiddlywiki
 |<$link to="$:/SiteTitle">Site Title</$link> |<$edit-text tiddler="$:/SiteTitle" default="" tag="input"/> |
 |<$link to="$:/SiteSubtitle">Site Subtitle</$link> |<$edit-text tiddler="$:/SiteSubtitle" default="" tag="input"/> |
 |*<$link to="$:/Home">Site Url</$link> |<$edit-text tiddler="$:/Home" default="" tag="input" placeholder="Enter your Site url here"/> |
+|*<$link to="$:/disqusShortUrl">Disqus Short URL</$link> |<$edit-text tiddler="$:/disqusShortUrl" default="" tag="input" placeholder="Enter your Disqus Short URL  here"/>|
 |<$link to="$:/footerText">Footer Text</$link> |<$edit-text tiddler="$:/footerText" default="" tag="input"/> |
 |<$link to="$:/userName">User Name</$link> |<$edit-text tiddler="$:/userName" default="" tag="input"/> |
 |<$link to="$:/userBio">User Bio</$link> |<$edit-text tiddler="$:/userBio" default="" tag="input"/> |

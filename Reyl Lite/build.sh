@@ -1,7 +1,7 @@
 #!/bin/bash
 
 tiddlywiki --build &&
-cd output &&
+cd blog &&
 git add . &&
 git commit -m "update" &&
 git push

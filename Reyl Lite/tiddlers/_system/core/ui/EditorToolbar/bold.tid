@@ -1,0 +1,17 @@
+caption: {{$:/language/Buttons/Bold/Caption}}
+condition: [is[tiddler]<targetTiddler>]
+created: 20170129090039284
+description: {{$:/language/Buttons/Bold/Hint}}
+icon: $:/core/images/bold
+modified: 20170129090550822
+shortcuts: ((bold))
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/bold
+type: text/vnd.tiddlywiki
+
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="wrap-selection"
+	prefix="''"
+	suffix="''"
+/>

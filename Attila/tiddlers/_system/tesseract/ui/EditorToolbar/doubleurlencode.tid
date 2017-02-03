@@ -2,23 +2,23 @@ caption: Double Url Encode Button
 condition: [<targetTiddler>type[blog/footer-item]] [<targetTiddler>type[blog/sidebar-item]] [<targetTiddler>type[blog/header-nav-item]]
 created: 20170129104053705
 description: Double url encode the text field as  a whole
-icon: $:/tesseract/images/bold/doubleurlencode
+icon: $:/tesseract/images/doubleurlencode
 list-before: $:/core/ui/EditorToolbar/bold
-modified: 20170129125238481
+modified: 20170203054823768
 tags: $:/tags/EditorToolbar blogCore
 title: $:/tesseract/ui/EditorToolbar/doubleurlencode
 type: blog/footer-item
 
-\define test()
+\define doubleurlencodedtext()
 <$list filter="[<targetTiddler>]">
 <$view format="doubleurlencoded"/>.html
 </$list>
 \end
 
-<$wikify name="test2" text=<<test>>>
+<$wikify name="wikifieddoubleurlencodedtext" text=<<doubleurlencodedtext>>>
 
 <$action-sendmessage
 	$message="tm-edit-text-operation"
 	$param="replace-all"
-	text=<<test2>>
+	text=<<wikifieddoubleurlencodedtext>>
 />

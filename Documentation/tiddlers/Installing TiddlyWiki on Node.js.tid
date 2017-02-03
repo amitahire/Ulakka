@@ -72,6 +72,6 @@ Example Debian v8.0:
   	<nav class="nav-filename icon-terminal">
     	Terminal
   	</nav>
-  	<pre class="numbered language-curl"> <code class="language-curl"> <span class="token parameter">sudo ln</span><span class="token option">   -s</span><span class="token url">/usr/bin/nodejs /usr/bin/node</span></code><span class="line-numbers"></span></pre>
+  	<pre class="numbered language-curl"> <code class="language-curl"> <span class="token parameter">sudo ln</span><span class="token option">   -s</span><span class="token url"> /usr/bin/nodejs /usr/bin/node</span></code><span class="line-numbers"></span></pre>
    </div>
 

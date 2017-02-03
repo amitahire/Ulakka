@@ -1,0 +1,13 @@
+button-classes: tc-text-editor-toolbar-item-start-group
+caption: {{$:/language/Buttons/Link/Caption}}
+condition: [is[tiddler]<targetTiddler>]
+created: 20170129090039301
+description: {{$:/language/Buttons/Link/Hint}}
+dropdown: $:/core/ui/EditorToolbar/link-dropdown
+icon: $:/core/images/link
+modified: 20170129090551025
+shortcuts: ((link))
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/link
+type: text/vnd.tiddlywiki
+

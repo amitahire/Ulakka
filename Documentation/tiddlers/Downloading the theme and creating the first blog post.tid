@@ -15,11 +15,16 @@ order: 2
   <p>In Debian derivatives, a method to launch the ~NodeJs server using a desktop shortcut is described <a href="https://tesseract-index.bitbucket.io/tweaks/alpha.html#Creating%20Launchers%20for%20NodeJs%20in%20Debian%20derivatives:[[Creating%20Launchers%20for%20NodeJs%20in%20Debian%20derivatives]]%20[[More%20Plans]]">here</a>.</p>
 </aside>
 
-* Serve one of the themes to localhost. In terminal, type for eg; `tiddlywiki t-blog/Attila --server` and go to http://127.0.0.1:8080
+* Serve one of the themes to localhost. In terminal, type for eg; <div class="code">
+  	<nav class="nav-filename icon-terminal">
+    	Terminal
+  	</nav>
+  	<pre class="numbered language-curl"> <code class="language-curl"> <span class="token parameter">tiddlywiki t-blog/Attila</span>   -<span class="token option">-server</span></code><span class="line-numbers"></span></pre>
+   </div> and go to http://127.0.0.1:8080
 
 
 * Fill out the gettingStarted2.0 form. Ensure that you have the home url filled out as ''http://myblog.com'' and not ''http://myblog.com/'' - ie, do not put the forward slash in the end.
 
 
-* Done!!  Let us [ext[start blogging|First%20blog%20post.html]]
+* Done!!  Let us [ext[start blogging|First%2520blog%2520post.html]]
 

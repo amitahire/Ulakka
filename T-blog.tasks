@@ -1,37 +1,16 @@
 
 Documentation:
-  [x] blog-header fields in ST3.  -Plugins needed: Stringify, SNippet, Keyboad bindings, Date @done (17-02-03 01:58)
-  [x] ST3 url encoding and move? @done (17-02-03 01:58)
-  [ ] Url encoding button
-  [ ] srcset field
   [ ] imgsrc
-  [x] You can make the footer into an about us snippet @done (17-02-03 01:28)
-  [ ] Once the -setfield command is usable. 
-  [ ] ? Grunt file anyone?
-  [ ] ?Sublime build system
-  [ ] Button to double url encode -make sure it is in all and document it.
-  [ ] Make sure everyone has url encoding button.
-  [ ] Prettifying doesn't work after TW5 sets in
-  [ ] Can we transclude inside a quote?
-  [ ] Og:image -Img source
-  [ ] Special Classes = imgsrc, summary, t-class
-  [ ] favicon
-  [ ] $:/RawMarkup/T-blog
-  [ ] Illdy Pagination Pending
-  [ ] User suggestion for meta tags
-  [ ] Fontawesome -ask? or keep quiet?
-  [ ] Create shortcuts to index.html
+  [ ] Special fields = imgsrc, summary, t-class
+  [ ] Documentation: Under a new header tips: You can add images 3 ways =-Image widget, Img html element and imgsrc field -Imgsrc has social media advantages.
 
 Astrid Documentation:
-  [ ] logo footer
 Ildy:
   [ ] Disqus
   [ ] map $:/userName to the default username tiddler
 
 Astrid:
   [ ] map $:/userName to the default username tiddler
-  [ ] postTemplate
-  [ ] Archive Template
   [ ] New tiddler should have imgsrc field
 Attila:
   [ ] background image of post - Document
@@ -39,10 +18,6 @@ Attila:
 
 
 
-
-Reyl Lite:
-  [ ] HeaderNav
-  [ ] Spacing between postst
 
   
 Future:
@@ -62,6 +37,7 @@ TW5 issues:
   [ ] File naming is not working
   [ ] ST3 Build with
   [ ] Grunt file
+  [ ] Can we transclude inside a quote?
   Proposals:
     [ ] Keyboard navigation to tiddlers
     [ ] increment the numbers
@@ -70,6 +46,27 @@ TW5 issues:
 
 ＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ [x] User suggestion for meta tags: Documentation: Under a new header tips: @done (17-02-03 12:34) @project(Documentation)
+ [x] Og:image -Img source @done (17-02-03 12:34) @project(Documentation)
+ [x] Favicon Documentation @done (17-02-03 12:34) @project(Documentation)
+ [x] $:/RawMarkup/T-blog: Documentation: Under a new header tips: @done (17-02-03 12:10) @project(Documentation)
+ [x] favicon @done (17-02-03 11:38) @project(Documentation)
+ [x] Button to double url encode -make sure it is in all and document it. @done (17-02-03 11:37) @project(Documentation)
+ [x] Url encoding button @done (17-02-03 11:23) @project(Documentation)
+ [x] Make sure everyone has url encoding button. @done (17-02-03 11:23) @project(Documentation)
+ [x] Illdy Pagination Pending @done (17-02-03 10:56) @project(Documentation)
+ [x] Create shortcuts to index.html @done (17-02-03 10:56) @project(Documentation)
+ [x] Fontawesome -ask? or keep quiet? @done (17-02-03 10:55) @project(Documentation)
+ [x] logo footer @done (17-02-03 10:51) @project(Astrid Documentation)
+ [x] Archive Template @done (17-02-03 10:51) @project(Astrid)
+ [x] postTemplate? @done (17-02-03 10:49) @project(Astrid)
+ [x] HeaderNav @done (17-02-03 10:37) @project(Reyl Lite)
+ [x] Archives for Rey @done (17-02-03 10:37) @project(Reyl Lite)
+ [x] Spacing between postst @done (17-02-03 10:00) @project(Reyl Lite)
+ [x] srcset field @done (17-02-03 08:41) @project(Documentation)
+ [x] blog-header fields in ST3.  -Plugins needed: Stringify, SNippet, Keyboad bindings, Date @done (17-02-03 01:58) @project(Documentation)
+ [x] ST3 url encoding and move? @done (17-02-03 01:58) @project(Documentation)
+ [x] You can make the footer into an about us snippet @done (17-02-03 01:28) @project(Documentation)
  [x] You can delete all demo tiddlers. Also all the images in blog/images @done (17-02-02 20:32) @project(Documentation)
  [x] htaccess and custom 404 @done (17-02-02 20:03) @project(Future)
  [x] Picking your mind  - Social Icons would you rather share? @done (17-02-02 20:03) @project(Future)

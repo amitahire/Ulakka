@@ -17,7 +17,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="canonical" href=""> 
     
-
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
 	<!-- OG: Posts -->
 	<meta property="og:locale" content="en_US">
@@ -75,8 +75,8 @@
     <div id="docs">
         <div id="sidebar" class="">
             <div class="logo">
-                <a class="site" href="https://stripe.com/" title="Stripe"></a>
-                <a class="extension" href="https://stripe.com/docs">T-blogs</a>
+                <a class="site" href="index.html" title="T-blogs"></a>
+                <a class="extension" href="index.html">T-blogs</a>
             </div>
             <div class="nav-border"></div>
 
@@ -100,6 +100,8 @@
                 <h1 class="home"><a href="Disqus%2520Integration.html" class="">Disqus Integration</a></h1>             
         	
                 <h1 class="home"><a href="Sublime%2520Text%2520Workflow.html" class="">Sublime Text Workflow</a></h1>             
+        	
+                <h1 class="home"><a href="A%2520few%2520Tips.html" class="">A few Tips</a></h1>             
         	
                 <h1 class="home"><a href="Roadmap.html" class="">Roadmap</a></h1>             
         	
@@ -134,10 +136,38 @@
                         
                             <a href="#Keybindings">Keybindings</a><br/>
                         
+                            <a href="#Snippet">Snippet</a><br/>
+                        
+                            <a href="#Single%20button%20to%20publish.">Single button to publish.</a><br/>
+                        
                     </p>
-                    <p><p><div class="code">
+                    <p><p>As I mentioned in the begining, this whole rabbit hole had its begining with the thought, I wish I could open up my text editor and write my blog post, and press a button to publish it. Some ideas are like cats, they demand attention. If we don't give it to them, they will intrude our personal space, our laptops, our thoughts. Hmm, finally I decided to give it a go. Turns out, themes for blogs could be created so easily, I made 5 out of the time I used to make a single TW5 theme. I even found a decent looking documentation web and snatch its looks too for this documentation. </p><p>Enough about that. Here I am shouwing how I finally got around to achieving my initial objective using a couple of plugins for sublime text 3.</p><p>The plugins I used are : Stringify and <a class="tc-tiddlylink tc-tiddlylink-missing" href="#InsertDate">InsertDate</a>. Install them both using Sublime text package installer.</p></p>
+                </header>
+
+ 
+                <!-- Tiddlers Listed Here -->
+                
+                <section>
+                    <h2 id="Keybindings">Keybindings<a class="anchor" href="#plans"></a></h2>
+ 					<p>Once you are done installing plugins, open <strong>Preferences &gt; Key Bindings</strong> and add the following code to Right hand side plane.</p><p><div class="code">
   <nav class="nav-filename icon-file">
-    product.html
+    <a class="tc-tiddlylink tc-tiddlylink-missing" href="#KeyBindings">KeyBindings</a> -Sublime
+  </nav>
+  <pre class=" numbered language-html"><code class=" language-html"><span class="token property">{ &quot;keys&quot;: [&quot;f3&quot;], &quot;command&quot;: &quot;url_encode&quot; },</span>
+<span class="token property">{ &quot;keys&quot;: [&quot;f5&quot;], &quot;command&quot;: &quot;insert_date&quot;, &quot;args&quot;: {&quot;format&quot;: &quot;%Y%m%d%H%M%S001&quot;} },</span>
+
+</code><span class="line-numbers"><span></span><span></span></span></pre>
+</div></p>
+                    
+                </section>
+
+                
+                <section>
+                    <h2 id="Snippet">Snippet<a class="anchor" href="#plans"></a></h2>
+ 					<p>Finally, go to <strong>Preferences &gt; Browse Packages</strong>. Inside the User folder create a file with the extension <strong>.sublime-snippet</strong> for eg: tiddlerHeader.sublime-snippet. Add the following code and save. 
+<div class="code">
+  <nav class="nav-filename icon-file">
+    tiddlerHeader.sublime-snippet
   </nav>
   <pre class=" numbered language-html"><code class=" language-html"><span class="token property">&lt;snippet&gt;</span>
 <span class="token property">&lt;content&gt;&lt;![CDATA[</span>
@@ -158,23 +188,25 @@
 <span class="token property">&lt;description&gt;Tiddler header&lt;/description&gt;</span>
 <span class="token property">&lt;!– Optional: Set a scope to limit where the snippet will trigger –&gt;</span>
 <span class="token property">&lt;scope&gt;text.tid&lt;/scope&gt;</span>
-<span class="token property">&lt;/snippet&gt;</span></code></pre></div></p></p>
-                </header>
+<span class="token property">&lt;/snippet&gt;</span></code></pre></div></p><p>Now create a file with extension <strong>.tid</strong> in your tiddlers folder. On the first line, type <strong>tdh</strong> and press tab. If you followed the steps correctly, it would have expanded to</p><p><div class="code">
+  <nav class="nav-filename icon-file">
+    tiddlerHeader.sublime-snippet
+  </nav>
+  <pre class=" numbered language-html"><code class=" language-html"><span class="token property">title: myFileName</span>
+<span class="token property">tags: </span>
+<span class="token property">created:</span>
+<span class="token property">modified:</span>
+<span class="token property">modifier: Riz</span>
+<span class="token property">summary:</span>
+<span class="token property">caption:</span>
+<span class="token property">type: blog/blog-post</span></code></pre></div></p><p>A few points about the snippet for the uninitiated. </p><ul><li>You can obviously change the modifier name in the original snippet to your name</li><li>It will jump to the next stop on pressing tab. Once you entered the tags, press tab and it will position itself after created. Once you reach created, press F5 key - it will enter the correct date-stamp format. Same for the modified field.</li><li>After the last field press tab to jump to the text field leaving one blank line.</li><li>This snippet will only work if your file has <strong>.tid</strong> extension.</li><li>Also, apart from the sinppet, the above steps also maps url encoding function to your F3 key. So if you want the double url encoded title for your href attribute, you just need to select the text and press F3 twice.</li></ul><p>In the interest of full disclosure, I use <a class="tc-tiddlylink tc-tiddlylink-missing" href="#AdvancedNewFile">AdvancedNewFile</a> plugin for easy file creation, Emmet plugin for HTML work, and Shell Exec plugin for accessing the terminal occasionally.</p>
+                    
+                </section>
 
- 
-                <!-- Tiddlers Listed Here -->
                 
                 <section>
-                    <h2 id="Keybindings">Keybindings<a class="anchor" href="#plans"></a></h2>
- 					<p><div class="code">
-  <nav class="nav-filename icon-file">
-    product.html
-  </nav>
-  <pre class=" numbered language-html"><code class=" language-html"><span class="token property">{ &quot;keys&quot;: [&quot;f3&quot;], &quot;command&quot;: &quot;url_encode&quot; },</span>
-<span class="token property">{ &quot;keys&quot;: [&quot;f5&quot;], &quot;command&quot;: &quot;insert_date&quot;, &quot;args&quot;: {&quot;format&quot;: &quot;%Y%m%d%H%M%S001&quot;} },</span>
-
-</code><span class="line-numbers"><span></span><span></span></span></pre>
-</div></p>
+                    <h2 id="Single%20button%20to%20publish.">Single button to publish.<a class="anchor" href="#plans"></a></h2>
+ 					<p>Assuming that you are planning to host the blog in github or similar git powered targets, I recommend authenticating using SSH keys  to avoid having to enter your password each time you push. </p><p>I borrowed the code from the TW5 <a class="tc-tiddlylink-external" href="https://github.com/Jermolene-blog/blog" rel="noopener noreferrer" target="_blank">blog edition repo here</a> and put together a bash script that will build locally and push to the github. In the end I used the steps described here in my blog to create a launcher for the bash script. </p><p>There, now I open my ST3, expand my  snippet, type in my post, and launch my bash script from synapse - and it is out there in the world. Not bad, eh?</p>
                     
                 </section>
 
@@ -207,11 +239,7 @@
     <script type="text/javascript" src="js/a"></script>
 
     <script src="js/documentation-try-now-5df3221bb8ea34d1b0a0503fe7dadf9f.js"></script>
-    <script type="text/javascript">
-        Stripe.setPublishableKey('pk_test_6pRNASCoBOKtIshFeQd4XMUh');
-        Stripe.endpoint = 'https://api.stripe.com/v1';
-        tryItNow();
-    </script>
+
 
     <script src="js/config-aead70c07cdca45cec67e4141bf18edc.js"></script>
 

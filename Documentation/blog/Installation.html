@@ -17,7 +17,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="canonical" href=""> 
     
-
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
 	<!-- OG: Posts -->
 	<meta property="og:locale" content="en_US">
@@ -75,8 +75,8 @@
     <div id="docs">
         <div id="sidebar" class="">
             <div class="logo">
-                <a class="site" href="https://stripe.com/" title="Stripe"></a>
-                <a class="extension" href="https://stripe.com/docs">T-blogs</a>
+                <a class="site" href="index.html" title="T-blogs"></a>
+                <a class="extension" href="index.html">T-blogs</a>
             </div>
             <div class="nav-border"></div>
 
@@ -100,6 +100,8 @@
                 <h1 class="home"><a href="Disqus%2520Integration.html" class="">Disqus Integration</a></h1>             
         	
                 <h1 class="home"><a href="Sublime%2520Text%2520Workflow.html" class="">Sublime Text Workflow</a></h1>             
+        	
+                <h1 class="home"><a href="A%2520few%2520Tips.html" class="">A few Tips</a></h1>             
         	
                 <h1 class="home"><a href="Roadmap.html" class="">Roadmap</a></h1>             
         	
@@ -185,7 +187,7 @@
   	<nav class="nav-filename icon-terminal">
     	Terminal
   	</nav>
-  	<pre class="numbered language-curl"> <code class="language-curl"> <span class="token parameter">sudo ln</span><span class="token option">   -s</span><span class="token url">/usr/bin/nodejs /usr/bin/node</span></code><span class="line-numbers"></span></pre>
+  	<pre class="numbered language-curl"> <code class="language-curl"> <span class="token parameter">sudo ln</span><span class="token option">   -s</span><span class="token url"> /usr/bin/nodejs /usr/bin/node</span></code><span class="line-numbers"></span></pre>
    </div></p>
                     
                 </section>
@@ -196,7 +198,12 @@
  					<ol><li>Go to <a class="tc-tiddlylink-external" href="https://github.com/ibnishak/t-blog" rel="noopener noreferrer" target="_blank">the project page</a> and <span data-balloon="Click the ''Clone or Download'' button in top-right of the page." data-balloon-length="large" data-balloon-pos="up" style="text-decoration:underline">clone/download the repo</span>. Once downloaded, unzip it into a location of your choice. The following steps assume that you have downloaded it into your home folder.</li></ol><p><aside class="note">
   <h3 id="activating-payment-methods">Creating a shortcut.<a class="anchor" href="#activating-payment-methods"></a></h3>
   <p>In Debian derivatives, a method to launch the NodeJs server using a desktop shortcut is described <a href="https://tesseract-index.bitbucket.io/tweaks/alpha.html#Creating%20Launchers%20for%20NodeJs%20in%20Debian%20derivatives:[[Creating%20Launchers%20for%20NodeJs%20in%20Debian%20derivatives]]%20[[More%20Plans]]">here</a>.</p>
-</aside></p><ul><li>Serve one of the themes to localhost. In terminal, type for eg; <code>tiddlywiki t-blog/Attila --server</code> and go to <a class="tc-tiddlylink-external" href="http://127.0.0.1:8080" rel="noopener noreferrer" target="_blank">http://127.0.0.1:8080</a></li><li>Fill out the gettingStarted2.0 form. Ensure that you have the home url filled out as <strong><a class="tc-tiddlylink-external" href="http://myblog.com" rel="noopener noreferrer" target="_blank">http://myblog.com</a></strong> and not <strong><a class="tc-tiddlylink-external" href="http://myblog.com/" rel="noopener noreferrer" target="_blank">http://myblog.com/</a></strong> - ie, do not put the forward slash in the end.</li><li>Done!!  Let us <a class="tc-tiddlylink-external" href="First%20blog%20post.html" rel="noopener noreferrer" target="_blank">start blogging</a></li></ul>
+</aside></p><ul><li>Serve one of the themes to localhost. In terminal, type for eg; <div class="code">
+  	<nav class="nav-filename icon-terminal">
+    	Terminal
+  	</nav>
+  	<pre class="numbered language-curl"> <code class="language-curl"> <span class="token parameter">tiddlywiki t-blog/Attila</span>   -<span class="token option">-server</span></code><span class="line-numbers"></span></pre>
+   </div> and go to <a class="tc-tiddlylink-external" href="http://127.0.0.1:8080" rel="noopener noreferrer" target="_blank">http://127.0.0.1:8080</a></li><li>Fill out the gettingStarted2.0 form. Ensure that you have the home url filled out as <strong><a class="tc-tiddlylink-external" href="http://myblog.com" rel="noopener noreferrer" target="_blank">http://myblog.com</a></strong> and not <strong><a class="tc-tiddlylink-external" href="http://myblog.com/" rel="noopener noreferrer" target="_blank">http://myblog.com/</a></strong> - ie, do not put the forward slash in the end.</li><li>Done!!  Let us <a class="tc-tiddlylink-external" href="First%2520blog%2520post.html" rel="noopener noreferrer" target="_blank">start blogging</a></li></ul>
                     
                 </section>
 
@@ -229,11 +236,7 @@
     <script type="text/javascript" src="js/a"></script>
 
     <script src="js/documentation-try-now-5df3221bb8ea34d1b0a0503fe7dadf9f.js"></script>
-    <script type="text/javascript">
-        Stripe.setPublishableKey('pk_test_6pRNASCoBOKtIshFeQd4XMUh');
-        Stripe.endpoint = 'https://api.stripe.com/v1';
-        tryItNow();
-    </script>
+
 
     <script src="js/config-aead70c07cdca45cec67e4141bf18edc.js"></script>
 

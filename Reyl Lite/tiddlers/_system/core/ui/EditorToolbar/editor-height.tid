@@ -1,0 +1,18 @@
+caption: {{$:/language/Buttons/EditorHeight/Caption}}
+condition: [is[tiddler]<targetTiddler>]
+created: 20170129090039304
+custom-icon: yes
+description: {{$:/language/Buttons/EditorHeight/Hint}}
+dropdown: $:/core/ui/EditorToolbar/editor-height-dropdown
+icon: $:/core/images/fixed-height
+modified: 20170129090550977
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/editor-height
+type: text/vnd.tiddlywiki
+
+<$reveal tag="span" state="$:/config/TextEditor/EditorHeight/Mode" type="match" text="fixed">
+{{$:/core/images/fixed-height}}
+</$reveal>
+<$reveal tag="span" state="$:/config/TextEditor/EditorHeight/Mode" type="match" text="auto">
+{{$:/core/images/auto-height}}
+</$reveal>
