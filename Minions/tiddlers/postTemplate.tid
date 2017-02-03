@@ -438,14 +438,14 @@ type:
 <script>
 	  
 	    var disqus_config = function () {
-	        this.page.url = "https://tesseract-index.bitbucket.io/Block%2520Quotes%2520A%2520lot%2520of%2520them%2520%2520Fifth%2520Set.html";  
-	        this.page.identifier = "Block%20Quotes%20A%20lot%20of%20them%20%20Fifth%20Set-0";
+	        this.page.url = "`{{$:/Home}}/<$view field='title' format='doubleurlencoded'/>.html`";  
+	        this.page.identifier = "`<$view field='title' format='urlencoded'/><<qualify>>`";
 	    };
 	    
 	    (function() { 
 	        var d = document, s = d.createElement('script');
 	        
-	        s.src = '//https-ibnishak-github-io-t-blog.disqus.com/embed.js';
+	        s.src = '//`{{$:/disqusShortUrl}}`/embed.js';
 	        
 	        s.setAttribute('data-timestamp', +new Date());
 	        (d.head || d.body).appendChild(s);
