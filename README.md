@@ -2,7 +2,7 @@
 Creating blogs with TW5
 
 + [Demo](https://ibnishak.github.io/t-blog/)
-+ [Documentation](https://ibnishak.github.io/t-blog/)
++ [Documentation](https://ibnishak.github.io/t-blog/Documentation/Hello%2520There.html)
 
 TW5 has a neat feature of exporting to HTML files accepting several arguments. Unfortunately there are not many themes and much documentation on how to use this to create traditional blogs using TW5. The only known scenario where TW5 is used to create a static blog rather than uploading TW5 itself is the [blog edition](https://github.com/Jermolene-blog/blog).
 
